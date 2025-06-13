@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist_Mono } from "next/font/google";
 import { Quicksand } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import "./globals.css";

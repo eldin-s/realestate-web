@@ -40,7 +40,7 @@ const Regions = () => {
         </div>
       </div>
       <div className="absolute top-0 bottom-0 right-0 w-1/2 h-auto pointer-events-none">
-        {cities.map((city, idx) => (
+        {cities.map((city) => (
           <div
             key={city.name}
             className="bg-center h-full w-full absolute transition-opacity duration-500"

@@ -4,7 +4,6 @@ import Hero from "@/components/home/Hero";
 import NewProperties from "@/components/home/NewProperties";
 import Regions from "@/components/home/Regions";
 import VerticalProperties from "@/components/home/VerticalProperties";
-import Image from "next/image";
 
 export default function Home() {
   return (
