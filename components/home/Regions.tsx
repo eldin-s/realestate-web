@@ -18,14 +18,14 @@ const Regions = () => {
   const [hoveredCity, setHoveredCity] = useState(cities[0].image);
   return (
     <section className="w-full h-full -mt-8 rounded-t-[3rem] bg-foreground relative overflow-hidden">
-      <div className="flex gap-20 p-24">
-        <div className="flex-shrink-0">
+      <div className="flex gap-20 p-24 flex-wrap flex-col lg:flex-row items-center justify-between relative z-10">
+        <div className="">
           <h2 className="text-6xl font-extrabold text-secondary font-primary">
             Naši regioni
           </h2>
           <p className="text-card">Pronađi dom o kome sanjaš</p>
         </div>
-        <div className="grid grid-cols-3 gap-8 w-full flex-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-full flex-1">
           {cities.map((city, index) => (
             <div
               key={index}

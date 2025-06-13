@@ -14,7 +14,7 @@ const Hero = () => {
         }}
       >
         <div className="z-10 font-[family-name:var(--font-montserrat)] flex flex-col">
-          <h1 className="text-7xl font-extrabold text-center">
+          <h1 className="lg:text-7xl text-4xl font-extrabold text-center">
             Napravi korak <br /> za svoju budućnost.
           </h1>
           <p className="text-center pt-4">
@@ -26,10 +26,10 @@ const Hero = () => {
           <input 
             type="text"
             placeholder="Pretraži nekretnine, agenta ili lokaciju"
-            className="w-full max-w-md p-3 rounded-[4rem] border py-8 px-3 bg-white placeholder:text-gray-300 min-w-[650px]"
+            className="w-full max-w-md p-3 rounded-[4rem] border lg:py-8 py-4 px-3 bg-white placeholder:text-gray-300 lg:min-w-[650px] pr-20"
             />
 
-          <div className="rounded-full w-16 h-16 p-4 absolute right-4 top-1/2 -translate-y-1/2 dark:bg-secondary shadow-lg flex items-center justify-center">
+          <div className="rounded-full lg:w-16 lg:h-16 w-10 h-10 p-2 absolute right-4 top-1/2 -translate-y-1/2 dark:bg-secondary shadow-lg flex items-center justify-center">
             <Search className="w-full h-ull" />
           </div>
           </div>
