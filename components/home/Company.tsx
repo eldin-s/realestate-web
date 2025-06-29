@@ -12,7 +12,7 @@ const Company = () => {
       }}
     >
       <div className="py-24 flex flex-col items-center justify-center text-center font-primary gap-4">
-        <h1 className="text-7xl font-extrabold z-10">Kompanija</h1>
+        <h1 className="xl:text-7xl md:text-2xl font-extrabold z-10">Kompanija</h1>
         <p className="uppercase z-10 text-lg font-semibold">Potpis</p>
         <p className="z-10">
           Naša divizija za klijente sa visokom neto vrednošću i privatnim

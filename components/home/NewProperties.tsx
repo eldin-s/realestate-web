@@ -6,10 +6,10 @@ import { RentCarousel } from "../ui/RentCraousel";
 
 const NewProperties = () => {
   return (
-    <section className="w-full z-0 relative bg-foreground">
+    <section className="w-full z-0 relative bg-foreground pb-20">
         <div className="p-20">
 
-      <h1 className="text-7xl font-extrabold mb-10 text-card font-primary">
+      <h1 className="xl:text-7xl md:text-3xl text-xl font-extrabold mb-10 text-card font-primary">
         Najsmeliji novi razvoji
       </h1>
       <p>

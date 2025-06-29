@@ -157,7 +157,7 @@ export const rentListings = [
 const Featured = () => {
   return (
     <section className="w-full p-20 z-0 relative bg-foreground">
-      <h1 className="text-7xl font-extrabold mb-10 text-card font-primary">Izdvojeno</h1>
+      <h1 className="text-5xl font-extrabold mb-6 text-card font-primary">Izdvojeno</h1>
       <p className="mb-8 text-card">Pogledajte neke od naših najekskluzivnijih kuća, stanova, gradskih kuća,
         <br/> penthausa i još mnogo toga.</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-10">
@@ -174,7 +174,7 @@ const Featured = () => {
           />
         ))}
       </div>
-      <Button buttonStyle="primary">Pogledaj više</Button>
+      <Button buttonStyle="primary" showArrow={true}>Pogledaj više</Button>
     </section>
   );
 };

@@ -1,5 +1,6 @@
 import { Search } from "lucide-react";
 import React from "react";
+import AimIcon from "@/components/Icons";
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
       >
         <div className="z-10 font-[family-name:var(--font-montserrat)] flex flex-col">
           <h1 className="lg:text-7xl text-4xl font-extrabold text-center">
-            Napravi korak <br /> za svoju budućnost.
+            Napravi korak za svoju <br /> budućnost.
           </h1>
           <p className="text-center pt-4">
             Preko 80 iznajmljenih stanova i 150 prodaja u rekordnom roku.
@@ -26,11 +27,14 @@ const Hero = () => {
           <input 
             type="text"
             placeholder="Pretraži nekretnine, agenta ili lokaciju"
-            className="w-full max-w-md p-3 rounded-[4rem] border lg:py-8 py-4 px-3 bg-white placeholder:text-gray-300 lg:min-w-[650px] pr-20"
-            />
+            className="w-full max-w-md p-3 rounded-[4rem] border lg:py-8 py-4 px-3 bg-white placeholder:text-gray-300 lg:min-w-[750px] pr-20"
+          />
 
-          <div className="rounded-full lg:w-16 lg:h-16 w-10 h-10 p-2 absolute right-4 top-1/2 -translate-y-1/2 dark:bg-secondary shadow-lg flex items-center justify-center">
+          <div className="absolute right-4 top-1/2 -translate-y-1/2 flex gap-4 items-center">
+          <AimIcon className="fill-gray-700 w-5 h-5" />
+          <div className="rounded-full lg:w-16 lg:h-16 w-10 h-10 p-2 dark:bg-secondary shadow-lg flex items-center justify-center">
             <Search className="w-full h-ull" />
+          </div>
           </div>
           </div>
         </div>
