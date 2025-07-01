@@ -4,7 +4,7 @@ import VerticalCard from '../ui/VerticalCard'
 
 const VerticalProperties = () => {
   return (
-    <section className="w-full p-20 z-0 relative">
+    <section className="w-full p-6 md:p-12 lg:p-20 z-0 relative">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
         {rentListings.slice(4, 10).map((listing) => (
           <VerticalCard

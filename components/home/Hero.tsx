@@ -23,14 +23,13 @@ const Hero = () => {
           </p>
 
         <div className="mx-auto relative mt-6">
-
           <input 
             type="text"
             placeholder="Pretraži nekretnine, agenta ili lokaciju"
-            className="w-full max-w-md p-3 rounded-[4rem] border lg:py-8 py-4 px-3 bg-white placeholder:text-gray-300 lg:min-w-[750px] pr-20"
+            className="min-w-96 md:min-w-[500px] lg:min-w-[750px] p-3 rounded-[4rem] border lg:py-8 py-4 px-3 bg-white placeholder:text-gray-300 pr-20 placeholder:max-w-[90%]"
           />
 
-          <div className="absolute right-4 top-1/2 -translate-y-1/2 flex gap-4 items-center">
+          <div className="absolute md:right-4 right-2 top-1/2 -translate-y-1/2 flex md:gap-4 gap-2 items-center">
           <AimIcon className="fill-gray-700 w-5 h-5" />
           <div className="rounded-full lg:w-16 lg:h-16 w-10 h-10 p-2 dark:bg-secondary shadow-lg flex items-center justify-center">
             <Search className="w-full h-ull" />

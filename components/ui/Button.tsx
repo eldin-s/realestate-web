@@ -20,7 +20,7 @@ const Button = ({ type = "button", buttonStyle, className, children, showArrow }
   return (
     <button
       type={type}
-      className={`rounded-full px-6 py-4 flex items-center group cursor-pointer gap-4 ${
+      className={`rounded-full lg:px-6 px-4 lg:py-4 py-2 text-sm lg:text-base flex items-center group cursor-pointer gap-4 ${
         buttonStyle ? buttonStyles[buttonStyle] : buttonStyles.primary
       } ${className}`}
     >

@@ -4,13 +4,13 @@ import React from 'react'
 
 export default function NewBuilding() {
   return (
-    <div className='w-full px-12 flex items-center pb-8 justify-center bg-black relative'>
+    <div className='w-full lg:px-12 flex items-center pb-8 justify-center bg-black relative'>
         <Image
             src={"/img/novaizgradnja.webp"}
             width={1800}
             height={600}
             alt="New Building"
-            className="w-full h-auto"
+            className="w-full h-auto min-h-80 object-cover"
         />
 
         <div
@@ -31,7 +31,7 @@ export default function NewBuilding() {
           }}
         />
 
-        <div className="absolute bottom-16 xl:left-56 sm:left-20 flex flex-col items-start gap-4 text-white z-10">
+        <div className="absolute bottom-16 xl:left-56 md:left-20 left-6 flex flex-col items-start lg:gap-4 gap-1 text-white z-10">
             <p className='uppercase xl:text-2xl font-primary'>Nova izgradnja u toku</p>
             <h3 className='xl:text-5xl text-lg font-extrabold font-primary'>U Centru Grada</h3>
             <p className='flex items-center gap-4'>Pogledajte lokaciju <MapPin className='w-6 h-6 text-red-600' /></p>

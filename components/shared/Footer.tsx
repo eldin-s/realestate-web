@@ -3,8 +3,8 @@ import Button from "../ui/Button";
 
 const Footer = () => {
   return (
-    <footer className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 p-20 bg-white">
-      <div className="flex flex-col items-start justify-start gap-8 ">
+    <footer className="grid xl:grid-cols-5 lg:grid-cols-4 grid-cols-2 lg:p-20 md:p-14 p-6 bg-white">
+      <div className="flex lg:flex-col items-start justify-start gap-8 w-full col-span-2 lg:col-span-1">
         <Button showArrow={true}>Pridruži se</Button>
         <Button
           showArrow={true}
@@ -15,47 +15,47 @@ const Footer = () => {
         </Button>
       </div>
 
-      <div className="">
-        <ul className="flex flex-col items-start justify-start gap-4 font-primary text-card font-extrabold">
+      <div className="mt-4 lg:mt-0">
+        <ul className="flex flex-col items-start justify-start lg:gap-4 gap-1 font-primary text-card font-extrabold">
           <li>
-            <p className="text-2xl transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+            <p className="lg:text-2xl text-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
               Kupi
             </p>
           </li>
           <li>
-            <p className="text-2xl transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+            <p className="lg:text-2xl text-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
               Prodaj
             </p>
           </li>
           <li>
-            <p className="text-2xl transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+            <p className="lg:text-2xl text-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
               Izajmi
             </p>
           </li>
           <li>
-            <p className="text-2xl transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+            <p className="lg:text-2xl text-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
               Izdaj
             </p>
           </li>
           <li>
-            <p className="text-2xl transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+            <p className="lg:text-2xl text-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
               Nove izgradnje
             </p>
           </li>
           <li>
-            <p className="text-2xl transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+            <p className="lg:text-2xl text-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
               Agenti
             </p>
           </li>
           <li>
-            <p className="text-2xl transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+            <p className="lg:text-2xl text-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
               Kontakt
             </p>
           </li>
         </ul>
       </div>
 
-      <div className="">
+      <div className="mt-4 lg:mt-0">
         <p className="text-ring text-sm uppercase font-bold">
           Marketing & Dostignuće
         </p>
@@ -79,7 +79,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="">
+      <div className="mt-4 lg:mt-0">
         <p className="text-ring text-sm uppercase font-bold">Kompanija</p>
 
         <ul className="text-card text-sm uppercase font-primary font-bold flex flex-col items-start justify-start mt-4">
@@ -111,7 +111,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="">
+      <div className="mt-4 lg:mt-0">
         <p className="text-ring text-sm uppercase font-bold">Uvidi</p>
 
         <ul className="text-card text-sm uppercase font-primary font-bold flex flex-col items-start justify-start mt-4">

@@ -173,12 +173,12 @@ export const RentCarousel = () => {
     <>
       <div
         ref={containerRef}
-        className="flex overflow-x-auto space-x-4 py-4 px-2 scrollbar-hide min-h-[600px]"
+        className="flex overflow-x-auto space-x-4 py-4 px-2 scrollbar-hide lg:min-h-[600px]"
       >
         {rentListings.map((listing) => (
           <div
             key={listing.id}
-            className="flex-shrink-0 group relative h-[480px] w-58 hover:w-[530px] hover:h-[530px] transition-all duration-300 ease-in-out bg-white shadow-md rounded-lg overflow-hidden cursor-pointer"
+            className="flex-shrink-0 group relative h-[300px] lg:h-[480px] w-58 hover:w-[530px] hover:h-[530px] transition-all duration-300 ease-in-out bg-white shadow-md rounded-lg overflow-hidden cursor-pointer"
           >
             <img
               src={listing.img}
@@ -205,7 +205,7 @@ export const RentCarousel = () => {
                 </p>
                 <p>
                   <strong>Dostupno od:</strong>{" "}
-                  {new Date(listing.available_from).toLocaleDateString()}
+                  {listing.available_from}
                 </p>
               </div>
             </div>

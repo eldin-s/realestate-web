@@ -43,6 +43,7 @@ const Studios = () => {
         autoPlay
         muted
         loop
+        playsInline
         id="myVideo"
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
@@ -51,7 +52,7 @@ const Studios = () => {
 
       <div className="absolute inset-0 bg-black/60 z-10"></div>
 
-      <div className="relative flex flex-col items-center justify-end w-full h-full text-white text-center z-20 px-20 font-primary pb-6">
+      <div className="relative flex flex-col items-center justify-end w-full h-full text-white text-center z-20 lg:px-20 px-6 font-primary pb-6">
         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-6 items-end">
           {cards.map((card, index) => {
             const isExpanded = hoveredCard === card.id;

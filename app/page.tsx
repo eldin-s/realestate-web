@@ -13,7 +13,7 @@ import VideoSection from "@/components/home/VideoSection";
 
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-quicksand)]">
+    <div className="font-[family-name:var(--font-quicksand)] overflow-x-hidden">
       <Hero />
       <Regions />
       <Featured />

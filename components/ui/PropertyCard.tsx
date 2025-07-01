@@ -18,24 +18,29 @@ const PropertyCard = ({
   location,
   baths,
   square_meters,
-  category
+  category,
 }: PropertyCardProps) => {
   return (
     <>
       <div className="overflow-hidden group font-primary cursor-pointer relative">
-        <div className="overflow-hidden rounded-lg max-h-[300px]">
+        <div className="overflow-hidden rounded-lg max-h-[300px] relative">
           <img
             src={img}
             alt={`Slika za lokaciju ${location}`}
             className="group-hover:scale-105 transition-transform duration-300 ease-in-out w-full object-cover"
           />
+          <div className="absolute bottom-0 translate-y-1/2 left-0 bg-black rounded-r-full h-14">
+            <span className="text-white px-3 py-1 pr-8 text-base font-bold uppercase">
+              Force Mansion
+            </span>
+          </div>
         </div>
         <div className="pt-4 text-card">
-          <h2 className="font-bold mb-2 text-lg">
+          <h2 className="font-bold lg:mb-2 mb-1 lg:text-lg text-sm">
             {formatPrice(monthly_rent)} € / mesečno
           </h2>
-          <p className=" mb-2">{location}</p>
-          <div className="font-bold w-full flex items-center gap-4">
+          <p className="lg:mb-2 mb-1">{location}</p>
+          <div className="font-bold w-full flex items-center gap-4 text-sm lg:text-base">
             <span>
               {rooms} sob{rooms > 1 ? "e" : "a"}
             </span>
@@ -47,9 +52,9 @@ const PropertyCard = ({
         </div>
 
         <div className="absolute top-3 left-3">
-            <span className="bg-foreground/80 text-card px-3 py-1 rounded-md text-xs font-bold uppercase">
-                {category}
-            </span>
+          <span className="bg-foreground/80 text-card px-3 py-1 rounded-md text-xs lg:text-sm font-bold uppercase">
+            {category}
+          </span>
         </div>
       </div>
     </>

@@ -3,7 +3,7 @@ import React from "react";
 const Partners = () => {
   return (
     <section className="flex items-center gap-8 bg-white text-card overflow-hidden">
-      <p className="font-bold font-primary uppercase text-sm whitespace-nowrap z-20 p-20 bg-white">
+      <p className="font-bold font-primary uppercase text-sm whitespace-nowrap z-20 lg:p-20 p-4 py-10 bg-white">
         Istaknuti u
       </p>
 
@@ -29,7 +29,7 @@ const Partners = () => {
                 <img
                   src={src}
                   alt={`logo-${i}`}
-                  className="w-20 h-auto flex-shrink-0"
+                  className="lg:w-20 w-10 h-auto flex-shrink-0"
                 />
               </li>
             ))}

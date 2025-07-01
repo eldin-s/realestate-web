@@ -1,6 +1,7 @@
 "use client";
 
 import { ChevronDown, Menu, Search, User } from "lucide-react";
+import Image from "next/image";
 import React, { useEffect } from "react";
 
 const navItems = [
@@ -45,7 +46,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`p-4 pt-10 mx-2 rounded-full fixed right-0 left-0 z-50 transition-all duration-300 ${
+      className={`md:p-4 md:pt-10 pt-4 mx-2 rounded-full fixed right-0 left-0 z-50 transition-all duration-300 ${
         scrolled
           ? "top-4 bg-card/90 shadow-lg md:py-8 py-4"
           : "top-16 bg-transparent"
@@ -53,10 +54,12 @@ const Navbar = () => {
     >
       <nav className="flex items-center justify-between gap-2 font-[family-name:var(--font-quicksand)]">
         <div className="pl-8">
-          <img
+          <Image
             src="/real-estate.png"
             className="max-h-6 w-full object-cover"
             alt="Logo"
+            width={150}
+            height={40}
           />
         </div>
         {/* Desktop nav */}

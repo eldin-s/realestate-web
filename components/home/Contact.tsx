@@ -3,9 +3,9 @@ import Button from "../ui/Button";
 
 const Contact = () => {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 px-28 py-20 relative overflow-hidden">
-      <div className="flex items-center justify-end relative">
-        <h1 className="text-5xl font-primary font-bold text-right mr-20">
+    <section className="grid grid-cols-1 lg:grid-cols-2 lg:px-28 lg:py-20 p-6 relative overflow-hidden">
+      <div className="flex items-center lg:justify-end relative">
+        <h1 className="lg:text-5xl text-2xl font-primary font-bold lg:text-right text-left mr-0 lg:mr-20 p-4">
           Stupi u kontakt
         </h1>
 
@@ -15,8 +15,8 @@ const Contact = () => {
       </div>
 
       {/* FORM */}
-      <form className="w-full max-w-xl bg-white p-12 rounded-lg text-card z-10">
-        <div className="flex flex-col space-y-10">
+      <form className="w-full max-w-xl bg-white lg:p-12 p-6 rounded-lg text-card z-10">
+        <div className="flex flex-col lg:space-y-10 space-y-4">
           <input
             type="text"
             placeholder="Ime i prezime"
