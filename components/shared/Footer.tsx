@@ -108,6 +108,21 @@ const Footer = () => {
               Katalog
             </p>
           </li>
+          <li>
+            <p className="transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+              Godišnji izveštaj
+            </p>
+          </li>
+          <li>
+            <p className="transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+              Poduhvati
+            </p>
+          </li>
+          <li>
+            <p className="transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+              Mansion
+            </p>
+          </li>
         </ul>
       </div>
 

@@ -6,10 +6,12 @@ interface ButtonProps {
   buttonStyle?: "light" | "primary" | "secondary" | "danger";
   className?: string;
   showArrow?: boolean;
+  size?: "xs" | "sm" | "md" | "lg" | "rounded-xs" | "rounded-sm" | "rounded-md" | "rounded-lg";
   children: ReactNode;
+  onClick?: () => void;
 }
 
-const Button = ({ type = "button", buttonStyle, className, children, showArrow }: ButtonProps) => {
+const Button = ({ type = "button", buttonStyle, className, children, size, showArrow, onClick }: ButtonProps) => {
   const buttonStyles = {
     light: "bg-foreground hover:bg-primary text-card font-semibold transition-colors duration-300",
     primary: "bg-card hover:bg-card/80 text-foreground font-semibold transition-colors duration-300",
@@ -17,12 +19,29 @@ const Button = ({ type = "button", buttonStyle, className, children, showArrow }
     danger: "bg-destructive hover:bg-destructive/80",
   };
 
+  const sizes = {
+    xs: "px-2 py-1 text-xs",
+    sm: "px-4 py-1 text-sm",
+    md: "lg:px-6 lg:py-4 px-4 py-2 text-sm",
+    lg: "px-8 py-5 text-base lg:text-lg lg:px-6 lg:py-4",
+    "rounded-xs": "p-1 text-xs",
+    "rounded-sm": "p-2 text-sm",
+    "rounded-md": "p-4 text-base",
+    "rounded-lg": "p-5 text-lg",
+  };
+
+        // className={`rounded-full lg:px-6 px-4 lg:py-4 py-2 text-sm lg:text-base flex items-center group cursor-pointer gap-4 ${
+
+
   return (
     <button
       type={type}
-      className={`rounded-full lg:px-6 px-4 lg:py-4 py-2 text-sm lg:text-base flex items-center group cursor-pointer gap-4 ${
+      onClick={onClick}
+      className={`rounded-full flex items-center group cursor-pointer gap-4 text-nowrap ${
         buttonStyle ? buttonStyles[buttonStyle] : buttonStyles.primary
-      } ${className}`}
+      } 
+      ${size ? sizes[size] : sizes.sm}
+      ${className}`}
     >
       {children}
       {showArrow && <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />}

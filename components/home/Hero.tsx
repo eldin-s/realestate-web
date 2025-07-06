@@ -4,7 +4,8 @@ import AimIcon from "@/components/Icons";
 
 const Hero = () => {
   return (
-    <section className="w-full pt-12 z-0 relative">
+    <section className="w-full z-0 relative">
+      <p className="text-center py-2 font-semibold underline">Pronađi svoj doma iz snova</p>
       <div
         className="relative w-full max-h-[720px] overflow-hidden rounded-t-[3rem] flex items-center justify-center"
         style={{
