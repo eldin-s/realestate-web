@@ -9,6 +9,7 @@ interface PropertyCardProps {
   baths: number;
   square_meters: number;
   category: string;
+  signature?: boolean;
 }
 
 const PropertyCard = ({
@@ -19,6 +20,7 @@ const PropertyCard = ({
   baths,
   square_meters,
   category,
+  signature,
 }: PropertyCardProps) => {
   return (
     <>
@@ -29,11 +31,13 @@ const PropertyCard = ({
             alt={`Slika za lokaciju ${location}`}
             className="group-hover:scale-105 transition-transform duration-300 ease-in-out w-full object-cover"
           />
-          <div className="absolute bottom-0 translate-y-1/2 left-0 bg-black rounded-r-full h-14">
-            <span className="text-white px-3 py-1 pr-8 text-base font-bold uppercase">
-              Force Mansion
-            </span>
-          </div>
+          {signature && (
+            <div className="absolute bottom-0 translate-y-1/2 left-0 bg-black rounded-r-full h-14">
+              <span className="text-white px-3 py-1 pr-8 text-base font-bold uppercase">
+                Force Mansion
+              </span>
+            </div>
+          )}
         </div>
         <div className="pt-4 text-card">
           <h2 className="font-bold lg:mb-2 mb-1 lg:text-lg text-sm">

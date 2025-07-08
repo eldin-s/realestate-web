@@ -40,7 +40,7 @@ const Button = ({ type = "button", buttonStyle, className, children, size, showA
       className={`rounded-full flex items-center group cursor-pointer gap-4 text-nowrap ${
         buttonStyle ? buttonStyles[buttonStyle] : buttonStyles.primary
       } 
-      ${size ? sizes[size] : sizes.sm}
+      ${size ? sizes[size] : sizes.md}
       ${className}`}
     >
       {children}

@@ -71,7 +71,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`md:p-4 md:pt-10 pt-0 mx-2 rounded-full fixed right-0 left-0 z-50 transition-all duration-300 ${
+      className={`md:p-4 md:pt-8 pt-4 mx-2 rounded-full fixed right-0 left-0 z-50 transition-all duration-300 ${
         scrolled
           ? "top-4 bg-card/90 shadow-lg md:py-8 py-4"
           : "top-16 bg-transparent"

@@ -1,6 +1,6 @@
 import { Search } from "lucide-react";
 import React from "react";
-import AimIcon from "@/components/Icons";
+import { AimIcon } from "../Icons";
 
 const Hero = () => {
   return (
