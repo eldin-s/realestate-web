@@ -1,0 +1,1854 @@
+[
+  {
+    "title": "Listing #1",
+    "category": "Iznajmi",
+    "monthly_rent": 2284,
+    "rooms": 1,
+    "baths": 3,
+    "square_meters": 182,
+    "location": "City 1, Address 1",
+    "furnished": true,
+    "available_from": "2025-07-02",
+    "contact_email": "owner1@example.com",
+    "img": "https://example.com/image1.jpg",
+    "signature": true,
+    "id": 1,
+    "created_at": "2025-06-02T00:00:00Z",
+    "interior": {
+      "property_type": "Kuća",
+      "listing_last_updated": "2025-07-11",
+      "appliances": [
+        "Mašina za sudove",
+        "Frižider"
+      ],
+      "other_features": [
+        "Bar",
+        "Visoki plafoni",
+        "Kamin",
+        "Mokri bar",
+        "Lift"
+      ],
+      "stories": 3
+    },
+    "exterior": {
+      "garage_spaces": 10,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna struja",
+        "Dostupan kanalizacioni sistem",
+        "Dostupan kablovski"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Prikačen",
+        "Kružni prilaz",
+        "Dva ili više mesta",
+        "Garaža",
+        "Pristup za RV",
+        "Prilaz"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Ulaz putem telefonskog poziva",
+        "Kamera sa zatvorenim krugom"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #2",
+    "category": "Iznajmi",
+    "monthly_rent": 862,
+    "rooms": 3,
+    "baths": 3,
+    "square_meters": 126,
+    "location": "City 2, Address 2",
+    "furnished": true,
+    "available_from": "2025-07-03",
+    "contact_email": "owner2@example.com",
+    "img": "https://example.com/image2.jpg",
+    "signature": false,
+    "id": 2,
+    "created_at": "2025-06-03T00:00:00Z",
+    "interior": {
+      "property_type": "Kuća",
+      "listing_last_updated": "2025-07-12",
+      "appliances": [
+        "Mašina za sudove",
+        "Frižider"
+      ],
+      "other_features": [
+        "Kosi plafoni",
+        "Bar",
+        "Visoki plafoni",
+        "Mokri bar",
+        "Kamin",
+        "Lift"
+      ],
+      "stories": 3
+    },
+    "exterior": {
+      "garage_spaces": 5,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna voda",
+        "Dostupna struja",
+        "Dostupan kablovski",
+        "Dostupan kanalizacioni sistem"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Gostujući",
+        "Garaža",
+        "Kružni prilaz",
+        "Prikačen",
+        "Dva ili više mesta",
+        "Pristup za RV",
+        "Prilaz"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Ulaz putem telefonskog poziva",
+        "Kamera sa zatvorenim krugom"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #3",
+    "category": "Na prodaju",
+    "monthly_rent": 2474,
+    "rooms": 3,
+    "baths": 1,
+    "square_meters": 64,
+    "location": "City 3, Address 3",
+    "furnished": false,
+    "available_from": "2025-07-04",
+    "contact_email": "owner3@example.com",
+    "img": "https://example.com/image3.jpg",
+    "signature": true,
+    "id": 3,
+    "created_at": "2025-06-04T00:00:00Z",
+    "interior": {
+      "property_type": "Garsonjera",
+      "listing_last_updated": "2025-07-13",
+      "appliances": [
+        "Sušilica",
+        "Frižider"
+      ],
+      "other_features": [
+        "Mokri bar",
+        "Kamin"
+      ],
+      "stories": 1
+    },
+    "exterior": {
+      "garage_spaces": 10,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna voda",
+        "Dostupan kanalizacioni sistem",
+        "Dostupan kablovski"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Gostujući",
+        "Prilaz",
+        "Garaža",
+        "Dva ili više mesta",
+        "Prikačen",
+        "Pristup za RV"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Ulaz putem telefonskog poziva",
+        "Kamera sa zatvorenim krugom"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #4",
+    "category": "Pod ugovorom",
+    "monthly_rent": 3499,
+    "rooms": 4,
+    "baths": 1,
+    "square_meters": 88,
+    "location": "City 4, Address 4",
+    "furnished": false,
+    "available_from": "2025-07-05",
+    "contact_email": "owner4@example.com",
+    "img": "https://example.com/image4.jpg",
+    "signature": false,
+    "id": 4,
+    "created_at": "2025-06-05T00:00:00Z",
+    "interior": {
+      "property_type": "Garsonjera",
+      "listing_last_updated": "2025-07-14",
+      "appliances": [
+        "Sušilica",
+        "Mašina za sudove",
+        "Električni šporet",
+        "Veš mašina",
+        "Frižider"
+      ],
+      "other_features": [
+        "Lift",
+        "Ostava",
+        "Ulazno predsoblje",
+        "Visoki plafoni",
+        "Mokri bar",
+        "Ugradni plakar",
+        "Kamin",
+        "Bar"
+      ],
+      "stories": 3
+    },
+    "exterior": {
+      "garage_spaces": 10,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna voda",
+        "Dostupna struja"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Prikačen",
+        "Pristup za RV",
+        "Prilaz",
+        "Dva ili više mesta",
+        "Kružni prilaz",
+        "Garaža"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #5",
+    "category": "Unajmi",
+    "monthly_rent": 3136,
+    "rooms": 1,
+    "baths": 2,
+    "square_meters": 113,
+    "location": "City 5, Address 5",
+    "furnished": false,
+    "available_from": "2025-07-06",
+    "contact_email": "owner5@example.com",
+    "img": "https://example.com/image5.jpg",
+    "signature": true,
+    "id": 5,
+    "created_at": "2025-06-06T00:00:00Z",
+    "interior": {
+      "property_type": "Garsonjera",
+      "listing_last_updated": "2025-07-15",
+      "appliances": [
+        "Mašina za sudove",
+        "Frižider",
+        "Električni šporet",
+        "Sušilica",
+        "Veš mašina"
+      ],
+      "other_features": [
+        "Mokri bar",
+        "Ugradni plakar",
+        "Kamin",
+        "Lift",
+        "Bar"
+      ],
+      "stories": 1
+    },
+    "exterior": {
+      "garage_spaces": 20,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupan kanalizacioni sistem",
+        "Dostupna struja"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Garaža",
+        "Dva ili više mesta",
+        "Prilaz",
+        "Kružni prilaz",
+        "Pristup za RV",
+        "Gostujući",
+        "Prikačen"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #6",
+    "category": "Iznajmi",
+    "monthly_rent": 783,
+    "rooms": 1,
+    "baths": 2,
+    "square_meters": 111,
+    "location": "City 6, Address 6",
+    "furnished": false,
+    "available_from": "2025-07-07",
+    "contact_email": "owner6@example.com",
+    "img": "https://example.com/image6.jpg",
+    "signature": false,
+    "id": 6,
+    "created_at": "2025-06-07T00:00:00Z",
+    "interior": {
+      "property_type": "Stan",
+      "listing_last_updated": "2025-07-16",
+      "appliances": [
+        "Sušilica",
+        "Frižider",
+        "Veš mašina"
+      ],
+      "other_features": [
+        "Ugradni plakar",
+        "Kamin",
+        "Ostava",
+        "Mokri bar",
+        "Kosi plafoni",
+        "Lift",
+        "Bar",
+        "Ulazno predsoblje"
+      ],
+      "stories": 1
+    },
+    "exterior": {
+      "garage_spaces": 0,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupan kanalizacioni sistem",
+        "Dostupna voda"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Pristup za RV",
+        "Gostujući",
+        "Prikačen"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #7",
+    "category": "Pod ugovorom",
+    "monthly_rent": 994,
+    "rooms": 3,
+    "baths": 2,
+    "square_meters": 29,
+    "location": "City 7, Address 7",
+    "furnished": false,
+    "available_from": "2025-07-08",
+    "contact_email": "owner7@example.com",
+    "img": "https://example.com/image7.jpg",
+    "signature": true,
+    "id": 7,
+    "created_at": "2025-06-08T00:00:00Z",
+    "interior": {
+      "property_type": "Stan",
+      "listing_last_updated": "2025-07-17",
+      "appliances": [
+        "Veš mašina",
+        "Mašina za sudove"
+      ],
+      "other_features": [
+        "Lift",
+        "Ugradni plakar",
+        "Kamin",
+        "Bar",
+        "Ulazno predsoblje",
+        "Ostava",
+        "Visoki plafoni",
+        "Mokri bar"
+      ],
+      "stories": 1
+    },
+    "exterior": {
+      "garage_spaces": 5,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna voda",
+        "Dostupna struja",
+        "Dostupan kanalizacioni sistem",
+        "Dostupan kablovski"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Prikačen",
+        "Pristup za RV",
+        "Garaža",
+        "Kružni prilaz",
+        "Dva ili više mesta"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Ulaz putem telefonskog poziva",
+        "Kamera sa zatvorenim krugom"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #8",
+    "category": "Pod ugovorom",
+    "monthly_rent": 1959,
+    "rooms": 2,
+    "baths": 3,
+    "square_meters": 74,
+    "location": "City 8, Address 8",
+    "furnished": true,
+    "available_from": "2025-07-09",
+    "contact_email": "owner8@example.com",
+    "img": "https://example.com/image8.jpg",
+    "signature": false,
+    "id": 8,
+    "created_at": "2025-06-09T00:00:00Z",
+    "interior": {
+      "property_type": "Kuća",
+      "listing_last_updated": "2025-07-18",
+      "appliances": [
+        "Mašina za sudove",
+        "Sušilica"
+      ],
+      "other_features": [
+        "Mokri bar",
+        "Kosi plafoni",
+        "Ostava",
+        "Lift",
+        "Bar",
+        "Kamin",
+        "Ulazno predsoblje"
+      ],
+      "stories": 1
+    },
+    "exterior": {
+      "garage_spaces": 20,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupan kanalizacioni sistem",
+        "Dostupna struja",
+        "Dostupna voda",
+        "Dostupan kablovski"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Prikačen",
+        "Prilaz",
+        "Dva ili više mesta",
+        "Pristup za RV"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #9",
+    "category": "Iznajmi",
+    "monthly_rent": 962,
+    "rooms": 2,
+    "baths": 3,
+    "square_meters": 37,
+    "location": "City 9, Address 9",
+    "furnished": true,
+    "available_from": "2025-07-10",
+    "contact_email": "owner9@example.com",
+    "img": "https://example.com/image9.jpg",
+    "signature": false,
+    "id": 9,
+    "created_at": "2025-06-10T00:00:00Z",
+    "interior": {
+      "property_type": "Garsonjera",
+      "listing_last_updated": "2025-07-19",
+      "appliances": [
+        "Mašina za sudove",
+        "Električni šporet",
+        "Veš mašina"
+      ],
+      "other_features": [
+        "Visoki plafoni",
+        "Ugradni plakar",
+        "Ostava",
+        "Kosi plafoni"
+      ],
+      "stories": 2
+    },
+    "exterior": {
+      "garage_spaces": 2,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupan kablovski",
+        "Dostupan kanalizacioni sistem",
+        "Dostupna voda"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Dva ili više mesta",
+        "Pristup za RV",
+        "Garaža",
+        "Gostujući",
+        "Kružni prilaz",
+        "Prilaz"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #10",
+    "category": "Iznajmi",
+    "monthly_rent": 2753,
+    "rooms": 3,
+    "baths": 2,
+    "square_meters": 37,
+    "location": "City 10, Address 10",
+    "furnished": true,
+    "available_from": "2025-07-11",
+    "contact_email": "owner10@example.com",
+    "img": "https://example.com/image10.jpg",
+    "signature": false,
+    "id": 10,
+    "created_at": "2025-06-11T00:00:00Z",
+    "interior": {
+      "property_type": "Kuća",
+      "listing_last_updated": "2025-07-20",
+      "appliances": [
+        "Mašina za sudove",
+        "Frižider",
+        "Veš mašina",
+        "Električni šporet",
+        "Sušilica"
+      ],
+      "other_features": [
+        "Kamin",
+        "Lift",
+        "Ulazno predsoblje",
+        "Mokri bar",
+        "Bar",
+        "Ostava"
+      ],
+      "stories": 2
+    },
+    "exterior": {
+      "garage_spaces": 10,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupan kablovski",
+        "Dostupna voda"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Kružni prilaz",
+        "Prikačen",
+        "Pristup za RV",
+        "Gostujući",
+        "Prilaz"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Ulaz putem telefonskog poziva",
+        "Kamera sa zatvorenim krugom"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #11",
+    "category": "Unajmi",
+    "monthly_rent": 693,
+    "rooms": 2,
+    "baths": 1,
+    "square_meters": 125,
+    "location": "City 11, Address 11",
+    "furnished": true,
+    "available_from": "2025-07-12",
+    "contact_email": "owner11@example.com",
+    "img": "https://example.com/image11.jpg",
+    "signature": false,
+    "id": 11,
+    "created_at": "2025-06-12T00:00:00Z",
+    "interior": {
+      "property_type": "Stan",
+      "listing_last_updated": "2025-07-21",
+      "appliances": [
+        "Frižider",
+        "Veš mašina",
+        "Mašina za sudove"
+      ],
+      "other_features": [
+        "Mokri bar",
+        "Visoki plafoni",
+        "Ulazno predsoblje",
+        "Kosi plafoni",
+        "Bar",
+        "Ostava",
+        "Ugradni plakar",
+        "Lift"
+      ],
+      "stories": 2
+    },
+    "exterior": {
+      "garage_spaces": 5,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna struja",
+        "Dostupna voda",
+        "Dostupan kablovski",
+        "Dostupan kanalizacioni sistem"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Prikačen",
+        "Garaža",
+        "Pristup za RV",
+        "Kružni prilaz",
+        "Prilaz"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Ulaz putem telefonskog poziva",
+        "Kamera sa zatvorenim krugom"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #12",
+    "category": "Iznajmi",
+    "monthly_rent": 1883,
+    "rooms": 1,
+    "baths": 3,
+    "square_meters": 200,
+    "location": "City 12, Address 12",
+    "furnished": true,
+    "available_from": "2025-07-13",
+    "contact_email": "owner12@example.com",
+    "img": "https://example.com/image12.jpg",
+    "signature": false,
+    "id": 12,
+    "created_at": "2025-06-13T00:00:00Z",
+    "interior": {
+      "property_type": "Kuća",
+      "listing_last_updated": "2025-07-22",
+      "appliances": [
+        "Mašina za sudove",
+        "Frižider",
+        "Sušilica",
+        "Veš mašina"
+      ],
+      "other_features": [
+        "Lift",
+        "Ulazno predsoblje",
+        "Mokri bar"
+      ],
+      "stories": 1
+    },
+    "exterior": {
+      "garage_spaces": 2,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupan kablovski",
+        "Dostupna voda",
+        "Dostupna struja"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Kružni prilaz",
+        "Gostujući",
+        "Dva ili više mesta"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Ulaz putem telefonskog poziva",
+        "Kamera sa zatvorenim krugom"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #13",
+    "category": "Iznajmi",
+    "monthly_rent": 2269,
+    "rooms": 2,
+    "baths": 1,
+    "square_meters": 106,
+    "location": "City 13, Address 13",
+    "furnished": false,
+    "available_from": "2025-07-14",
+    "contact_email": "owner13@example.com",
+    "img": "https://example.com/image13.jpg",
+    "signature": true,
+    "id": 13,
+    "created_at": "2025-06-14T00:00:00Z",
+    "interior": {
+      "property_type": "Garsonjera",
+      "listing_last_updated": "2025-07-23",
+      "appliances": [
+        "Mašina za sudove",
+        "Sušilica"
+      ],
+      "other_features": [
+        "Kosi plafoni",
+        "Kamin",
+        "Ugradni plakar",
+        "Bar",
+        "Mokri bar",
+        "Ostava",
+        "Ulazno predsoblje"
+      ],
+      "stories": 3
+    },
+    "exterior": {
+      "garage_spaces": 5,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupan kanalizacioni sistem",
+        "Dostupan kablovski",
+        "Dostupna voda",
+        "Dostupna struja"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Pristup za RV",
+        "Gostujući",
+        "Dva ili više mesta",
+        "Garaža",
+        "Prikačen",
+        "Prilaz"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #14",
+    "category": "Pod ugovorom",
+    "monthly_rent": 3001,
+    "rooms": 1,
+    "baths": 1,
+    "square_meters": 193,
+    "location": "City 14, Address 14",
+    "furnished": true,
+    "available_from": "2025-07-15",
+    "contact_email": "owner14@example.com",
+    "img": "https://example.com/image14.jpg",
+    "signature": false,
+    "id": 14,
+    "created_at": "2025-06-15T00:00:00Z",
+    "interior": {
+      "property_type": "Stan",
+      "listing_last_updated": "2025-07-24",
+      "appliances": [
+        "Električni šporet",
+        "Mašina za sudove",
+        "Sušilica",
+        "Frižider",
+        "Veš mašina"
+      ],
+      "other_features": [
+        "Bar",
+        "Mokri bar",
+        "Lift",
+        "Ulazno predsoblje",
+        "Kamin"
+      ],
+      "stories": 1
+    },
+    "exterior": {
+      "garage_spaces": 2,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna struja",
+        "Dostupan kablovski"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Garaža",
+        "Gostujući",
+        "Pristup za RV",
+        "Prikačen",
+        "Prilaz"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Ulaz putem telefonskog poziva",
+        "Kamera sa zatvorenim krugom"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #15",
+    "category": "Unajmi",
+    "monthly_rent": 3205,
+    "rooms": 3,
+    "baths": 3,
+    "square_meters": 122,
+    "location": "City 15, Address 15",
+    "furnished": false,
+    "available_from": "2025-07-16",
+    "contact_email": "owner15@example.com",
+    "img": "https://example.com/image15.jpg",
+    "signature": false,
+    "id": 15,
+    "created_at": "2025-06-16T00:00:00Z",
+    "interior": {
+      "property_type": "Kuća",
+      "listing_last_updated": "2025-07-25",
+      "appliances": [
+        "Električni šporet",
+        "Frižider",
+        "Mašina za sudove",
+        "Veš mašina"
+      ],
+      "other_features": [
+        "Ulazno predsoblje",
+        "Ostava",
+        "Kosi plafoni",
+        "Visoki plafoni",
+        "Lift",
+        "Ugradni plakar",
+        "Mokri bar"
+      ],
+      "stories": 3
+    },
+    "exterior": {
+      "garage_spaces": 20,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna voda",
+        "Dostupan kanalizacioni sistem"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Prilaz",
+        "Garaža",
+        "Kružni prilaz",
+        "Prikačen",
+        "Gostujući",
+        "Pristup za RV",
+        "Dva ili više mesta"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #16",
+    "category": "Pod ugovorom",
+    "monthly_rent": 2758,
+    "rooms": 1,
+    "baths": 3,
+    "square_meters": 42,
+    "location": "City 16, Address 16",
+    "furnished": false,
+    "available_from": "2025-07-17",
+    "contact_email": "owner16@example.com",
+    "img": "https://example.com/image16.jpg",
+    "signature": false,
+    "id": 16,
+    "created_at": "2025-06-17T00:00:00Z",
+    "interior": {
+      "property_type": "Stan",
+      "listing_last_updated": "2025-07-26",
+      "appliances": [
+        "Sušilica",
+        "Električni šporet"
+      ],
+      "other_features": [
+        "Kosi plafoni",
+        "Ostava",
+        "Mokri bar",
+        "Bar",
+        "Kamin",
+        "Ugradni plakar",
+        "Visoki plafoni",
+        "Lift",
+        "Ulazno predsoblje"
+      ],
+      "stories": 1
+    },
+    "exterior": {
+      "garage_spaces": 0,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna voda",
+        "Dostupan kanalizacioni sistem",
+        "Dostupna struja"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Kružni prilaz",
+        "Pristup za RV",
+        "Garaža",
+        "Gostujući",
+        "Prilaz"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #17",
+    "category": "Pod ugovorom",
+    "monthly_rent": 615,
+    "rooms": 1,
+    "baths": 3,
+    "square_meters": 112,
+    "location": "City 17, Address 17",
+    "furnished": false,
+    "available_from": "2025-07-18",
+    "contact_email": "owner17@example.com",
+    "img": "https://example.com/image17.jpg",
+    "signature": true,
+    "id": 17,
+    "created_at": "2025-06-18T00:00:00Z",
+    "interior": {
+      "property_type": "Stan",
+      "listing_last_updated": "2025-07-27",
+      "appliances": [
+        "Električni šporet",
+        "Frižider",
+        "Mašina za sudove",
+        "Sušilica"
+      ],
+      "other_features": [
+        "Ostava",
+        "Bar",
+        "Visoki plafoni",
+        "Kosi plafoni"
+      ],
+      "stories": 1
+    },
+    "exterior": {
+      "garage_spaces": 1,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna voda",
+        "Dostupan kanalizacioni sistem"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Gostujući",
+        "Pristup za RV",
+        "Prilaz"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Ulaz putem telefonskog poziva",
+        "Kamera sa zatvorenim krugom"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #18",
+    "category": "Na prodaju",
+    "monthly_rent": 2432,
+    "rooms": 1,
+    "baths": 3,
+    "square_meters": 77,
+    "location": "City 18, Address 18",
+    "furnished": true,
+    "available_from": "2025-07-19",
+    "contact_email": "owner18@example.com",
+    "img": "https://example.com/image18.jpg",
+    "signature": true,
+    "id": 18,
+    "created_at": "2025-06-19T00:00:00Z",
+    "interior": {
+      "property_type": "Stan",
+      "listing_last_updated": "2025-07-28",
+      "appliances": [
+        "Frižider",
+        "Električni šporet",
+        "Sušilica"
+      ],
+      "other_features": [
+        "Kosi plafoni",
+        "Kamin",
+        "Lift",
+        "Visoki plafoni"
+      ],
+      "stories": 3
+    },
+    "exterior": {
+      "garage_spaces": 10,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna struja",
+        "Dostupan kanalizacioni sistem",
+        "Dostupna voda",
+        "Dostupan kablovski"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Kružni prilaz",
+        "Prikačen",
+        "Pristup za RV",
+        "Dva ili više mesta",
+        "Prilaz"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Ulaz putem telefonskog poziva",
+        "Kamera sa zatvorenim krugom"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #19",
+    "category": "Na prodaju",
+    "monthly_rent": 2755,
+    "rooms": 3,
+    "baths": 1,
+    "square_meters": 142,
+    "location": "City 19, Address 19",
+    "furnished": true,
+    "available_from": "2025-07-20",
+    "contact_email": "owner19@example.com",
+    "img": "https://example.com/image19.jpg",
+    "signature": false,
+    "id": 19,
+    "created_at": "2025-06-20T00:00:00Z",
+    "interior": {
+      "property_type": "Garsonjera",
+      "listing_last_updated": "2025-07-29",
+      "appliances": [
+        "Frižider",
+        "Sušilica",
+        "Električni šporet",
+        "Mašina za sudove"
+      ],
+      "other_features": [
+        "Visoki plafoni",
+        "Kamin"
+      ],
+      "stories": 3
+    },
+    "exterior": {
+      "garage_spaces": 20,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupan kablovski",
+        "Dostupan kanalizacioni sistem"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Dva ili više mesta",
+        "Pristup za RV",
+        "Garaža",
+        "Prikačen",
+        "Prilaz",
+        "Gostujući"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #20",
+    "category": "Na prodaju",
+    "monthly_rent": 2287,
+    "rooms": 1,
+    "baths": 2,
+    "square_meters": 102,
+    "location": "City 20, Address 20",
+    "furnished": true,
+    "available_from": "2025-07-21",
+    "contact_email": "owner20@example.com",
+    "img": "https://example.com/image20.jpg",
+    "signature": false,
+    "id": 20,
+    "created_at": "2025-06-21T00:00:00Z",
+    "interior": {
+      "property_type": "Garsonjera",
+      "listing_last_updated": "2025-07-30",
+      "appliances": [
+        "Mašina za sudove",
+        "Sušilica",
+        "Frižider",
+        "Električni šporet",
+        "Veš mašina"
+      ],
+      "other_features": [
+        "Mokri bar",
+        "Lift",
+        "Bar"
+      ],
+      "stories": 3
+    },
+    "exterior": {
+      "garage_spaces": 2,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna struja",
+        "Dostupna voda",
+        "Dostupan kablovski",
+        "Dostupan kanalizacioni sistem"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Prilaz",
+        "Kružni prilaz",
+        "Dva ili više mesta"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #21",
+    "category": "Unajmi",
+    "monthly_rent": 1930,
+    "rooms": 3,
+    "baths": 1,
+    "square_meters": 50,
+    "location": "City 21, Address 21",
+    "furnished": true,
+    "available_from": "2025-07-22",
+    "contact_email": "owner21@example.com",
+    "img": "https://example.com/image21.jpg",
+    "signature": true,
+    "id": 21,
+    "created_at": "2025-06-22T00:00:00Z",
+    "interior": {
+      "property_type": "Kuća",
+      "listing_last_updated": "2025-07-31",
+      "appliances": [
+        "Mašina za sudove",
+        "Frižider",
+        "Veš mašina",
+        "Električni šporet",
+        "Sušilica"
+      ],
+      "other_features": [
+        "Visoki plafoni",
+        "Ugradni plakar",
+        "Mokri bar"
+      ],
+      "stories": 1
+    },
+    "exterior": {
+      "garage_spaces": 20,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupan kanalizacioni sistem",
+        "Dostupna struja",
+        "Dostupan kablovski"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Dva ili više mesta",
+        "Garaža",
+        "Gostujući",
+        "Prilaz",
+        "Kružni prilaz"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Ulaz putem telefonskog poziva",
+        "Kamera sa zatvorenim krugom"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #22",
+    "category": "Na prodaju",
+    "monthly_rent": 2423,
+    "rooms": 1,
+    "baths": 3,
+    "square_meters": 63,
+    "location": "City 22, Address 22",
+    "furnished": true,
+    "available_from": "2025-07-23",
+    "contact_email": "owner22@example.com",
+    "img": "https://example.com/image22.jpg",
+    "signature": false,
+    "id": 22,
+    "created_at": "2025-06-23T00:00:00Z",
+    "interior": {
+      "property_type": "Garsonjera",
+      "listing_last_updated": "2025-08-01",
+      "appliances": [
+        "Frižider",
+        "Mašina za sudove"
+      ],
+      "other_features": [
+        "Bar",
+        "Ulazno predsoblje",
+        "Mokri bar",
+        "Kamin",
+        "Visoki plafoni",
+        "Kosi plafoni"
+      ],
+      "stories": 2
+    },
+    "exterior": {
+      "garage_spaces": 1,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupan kablovski",
+        "Dostupna struja",
+        "Dostupan kanalizacioni sistem",
+        "Dostupna voda"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Prikačen",
+        "Prilaz",
+        "Gostujući"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #23",
+    "category": "Na prodaju",
+    "monthly_rent": 2747,
+    "rooms": 4,
+    "baths": 3,
+    "square_meters": 188,
+    "location": "City 23, Address 23",
+    "furnished": false,
+    "available_from": "2025-07-24",
+    "contact_email": "owner23@example.com",
+    "img": "https://example.com/image23.jpg",
+    "signature": false,
+    "id": 23,
+    "created_at": "2025-06-24T00:00:00Z",
+    "interior": {
+      "property_type": "Garsonjera",
+      "listing_last_updated": "2025-08-02",
+      "appliances": [
+        "Sušilica",
+        "Električni šporet",
+        "Frižider"
+      ],
+      "other_features": [
+        "Lift",
+        "Mokri bar",
+        "Kosi plafoni",
+        "Visoki plafoni",
+        "Ugradni plakar",
+        "Kamin"
+      ],
+      "stories": 3
+    },
+    "exterior": {
+      "garage_spaces": 10,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna voda",
+        "Dostupna struja",
+        "Dostupan kablovski"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Garaža",
+        "Prilaz",
+        "Pristup za RV",
+        "Prikačen",
+        "Gostujući",
+        "Kružni prilaz",
+        "Dva ili više mesta"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Ulaz putem telefonskog poziva",
+        "Kamera sa zatvorenim krugom"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #24",
+    "category": "Na prodaju",
+    "monthly_rent": 1922,
+    "rooms": 4,
+    "baths": 3,
+    "square_meters": 204,
+    "location": "City 24, Address 24",
+    "furnished": true,
+    "available_from": "2025-07-25",
+    "contact_email": "owner24@example.com",
+    "img": "https://example.com/image24.jpg",
+    "signature": true,
+    "id": 24,
+    "created_at": "2025-06-25T00:00:00Z",
+    "interior": {
+      "property_type": "Stan",
+      "listing_last_updated": "2025-08-03",
+      "appliances": [
+        "Električni šporet",
+        "Frižider",
+        "Mašina za sudove",
+        "Veš mašina"
+      ],
+      "other_features": [
+        "Ulazno predsoblje",
+        "Ostava",
+        "Kosi plafoni"
+      ],
+      "stories": 3
+    },
+    "exterior": {
+      "garage_spaces": 10,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna struja",
+        "Dostupan kanalizacioni sistem"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Kružni prilaz",
+        "Pristup za RV",
+        "Prikačen",
+        "Garaža",
+        "Dva ili više mesta",
+        "Gostujući",
+        "Prilaz"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #25",
+    "category": "Iznajmi",
+    "monthly_rent": 3123,
+    "rooms": 2,
+    "baths": 3,
+    "square_meters": 190,
+    "location": "City 25, Address 25",
+    "furnished": true,
+    "available_from": "2025-07-26",
+    "contact_email": "owner25@example.com",
+    "img": "https://example.com/image25.jpg",
+    "signature": true,
+    "id": 25,
+    "created_at": "2025-06-26T00:00:00Z",
+    "interior": {
+      "property_type": "Stan",
+      "listing_last_updated": "2025-08-04",
+      "appliances": [
+        "Veš mašina",
+        "Sušilica",
+        "Frižider"
+      ],
+      "other_features": [
+        "Bar",
+        "Lift",
+        "Kosi plafoni",
+        "Ulazno predsoblje",
+        "Visoki plafoni",
+        "Kamin",
+        "Ugradni plakar",
+        "Ostava"
+      ],
+      "stories": 2
+    },
+    "exterior": {
+      "garage_spaces": 2,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupan kanalizacioni sistem",
+        "Dostupan kablovski",
+        "Dostupna voda"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Gostujući",
+        "Prilaz",
+        "Prikačen",
+        "Kružni prilaz",
+        "Garaža",
+        "Dva ili više mesta"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #26",
+    "category": "Iznajmi",
+    "monthly_rent": 1305,
+    "rooms": 1,
+    "baths": 3,
+    "square_meters": 175,
+    "location": "City 26, Address 26",
+    "furnished": true,
+    "available_from": "2025-07-27",
+    "contact_email": "owner26@example.com",
+    "img": "https://example.com/image26.jpg",
+    "signature": false,
+    "id": 26,
+    "created_at": "2025-06-27T00:00:00Z",
+    "interior": {
+      "property_type": "Kuća",
+      "listing_last_updated": "2025-08-05",
+      "appliances": [
+        "Mašina za sudove",
+        "Električni šporet"
+      ],
+      "other_features": [
+        "Visoki plafoni",
+        "Kamin",
+        "Mokri bar"
+      ],
+      "stories": 1
+    },
+    "exterior": {
+      "garage_spaces": 2,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna voda",
+        "Dostupna struja",
+        "Dostupan kanalizacioni sistem"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Prikačen",
+        "Kružni prilaz",
+        "Dva ili više mesta"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Ulaz putem telefonskog poziva",
+        "Kamera sa zatvorenim krugom"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #27",
+    "category": "Iznajmi",
+    "monthly_rent": 3260,
+    "rooms": 4,
+    "baths": 3,
+    "square_meters": 47,
+    "location": "City 27, Address 27",
+    "furnished": false,
+    "available_from": "2025-07-28",
+    "contact_email": "owner27@example.com",
+    "img": "https://example.com/image27.jpg",
+    "signature": true,
+    "id": 27,
+    "created_at": "2025-06-28T00:00:00Z",
+    "interior": {
+      "property_type": "Kuća",
+      "listing_last_updated": "2025-08-06",
+      "appliances": [
+        "Veš mašina",
+        "Frižider",
+        "Električni šporet"
+      ],
+      "other_features": [
+        "Lift",
+        "Kamin",
+        "Ulazno predsoblje",
+        "Ugradni plakar",
+        "Mokri bar"
+      ],
+      "stories": 3
+    },
+    "exterior": {
+      "garage_spaces": 10,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna voda",
+        "Dostupan kablovski",
+        "Dostupna struja",
+        "Dostupan kanalizacioni sistem"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Pristup za RV",
+        "Prilaz",
+        "Dva ili više mesta",
+        "Kružni prilaz",
+        "Prikačen",
+        "Gostujući",
+        "Garaža"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #28",
+    "category": "Na prodaju",
+    "monthly_rent": 3034,
+    "rooms": 1,
+    "baths": 2,
+    "square_meters": 80,
+    "location": "City 28, Address 28",
+    "furnished": true,
+    "available_from": "2025-07-29",
+    "contact_email": "owner28@example.com",
+    "img": "https://example.com/image28.jpg",
+    "signature": true,
+    "id": 28,
+    "created_at": "2025-06-29T00:00:00Z",
+    "interior": {
+      "property_type": "Kuća",
+      "listing_last_updated": "2025-08-07",
+      "appliances": [
+        "Električni šporet",
+        "Veš mašina"
+      ],
+      "other_features": [
+        "Kosi plafoni",
+        "Visoki plafoni",
+        "Kamin",
+        "Bar",
+        "Ulazno predsoblje",
+        "Ostava",
+        "Mokri bar",
+        "Ugradni plakar"
+      ],
+      "stories": 1
+    },
+    "exterior": {
+      "garage_spaces": 20,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupan kablovski",
+        "Dostupan kanalizacioni sistem"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Pristup za RV",
+        "Garaža",
+        "Prikačen",
+        "Dva ili više mesta",
+        "Prilaz",
+        "Kružni prilaz"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #29",
+    "category": "Iznajmi",
+    "monthly_rent": 2139,
+    "rooms": 3,
+    "baths": 1,
+    "square_meters": 36,
+    "location": "City 29, Address 29",
+    "furnished": false,
+    "available_from": "2025-07-30",
+    "contact_email": "owner29@example.com",
+    "img": "https://example.com/image29.jpg",
+    "signature": false,
+    "id": 29,
+    "created_at": "2025-06-30T00:00:00Z",
+    "interior": {
+      "property_type": "Garsonjera",
+      "listing_last_updated": "2025-08-08",
+      "appliances": [
+        "Sušilica",
+        "Mašina za sudove"
+      ],
+      "other_features": [
+        "Ostava",
+        "Ulazno predsoblje",
+        "Ugradni plakar"
+      ],
+      "stories": 3
+    },
+    "exterior": {
+      "garage_spaces": 2,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupna struja",
+        "Dostupan kablovski"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Prilaz",
+        "Dva ili više mesta",
+        "Pristup za RV"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Kamera sa zatvorenim krugom",
+        "Ulaz putem telefonskog poziva"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  },
+  {
+    "title": "Listing #30",
+    "category": "Iznajmi",
+    "monthly_rent": 2357,
+    "rooms": 4,
+    "baths": 1,
+    "square_meters": 183,
+    "location": "City 30, Address 30",
+    "furnished": true,
+    "available_from": "2025-07-31",
+    "contact_email": "owner30@example.com",
+    "img": "https://example.com/image30.jpg",
+    "signature": false,
+    "id": 30,
+    "created_at": "2025-07-01T00:00:00Z",
+    "interior": {
+      "property_type": "Stan",
+      "listing_last_updated": "2025-08-09",
+      "appliances": [
+        "Frižider",
+        "Sušilica",
+        "Električni šporet",
+        "Mašina za sudove",
+        "Veš mašina"
+      ],
+      "other_features": [
+        "Ugradni plakar",
+        "Ostava",
+        "Kosi plafoni",
+        "Visoki plafoni",
+        "Lift",
+        "Ulazno predsoblje"
+      ],
+      "stories": 1
+    },
+    "exterior": {
+      "garage_spaces": 1,
+      "water_source": "Javni vodovod",
+      "utilities": [
+        "Dostupan kanalizacioni sistem",
+        "Dostupan kablovski"
+      ],
+      "pool": "Bazen",
+      "roof": "Betonski krov",
+      "lot_features": "Slepa ulica",
+      "parking": [
+        "Dva ili više mesta",
+        "Prilaz",
+        "Gostujući",
+        "Garaža",
+        "Prikačen"
+      ],
+      "heat_type": "Centralno grejanje",
+      "air_conditioning": "Centralna klima",
+      "sewer": "Javna kanalizacija",
+      "amenities": "Teniski teren(i)",
+      "security_features": [
+        "Ulaz putem telefonskog poziva",
+        "Kamera sa zatvorenim krugom"
+      ],
+      "other_exterior_features": "TV antena"
+    }
+  }
+]

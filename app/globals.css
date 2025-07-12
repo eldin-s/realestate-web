@@ -145,3 +145,7 @@
   will-change: transform;
 }
 
+.container {
+  padding: 24px;
+  font-weight: 400;
+}

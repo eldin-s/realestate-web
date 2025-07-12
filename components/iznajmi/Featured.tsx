@@ -51,6 +51,7 @@ const Featured = () => {
           displayed.map((listing) => (
             <PropertyCard
               key={listing.id}
+              id={listing.id}
               img={listing.img}
               monthly_rent={listing.monthly_rent}
               rooms={listing.rooms}

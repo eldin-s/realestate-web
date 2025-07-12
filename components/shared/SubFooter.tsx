@@ -79,7 +79,6 @@ const SubFooter = () => {
             ))}
           </ul>
 
-          <p>Web razvijen od strane Eldin Skenderi</p>
         </div>
 
         <p className="text-sm text-gray-500 font-primary italic">

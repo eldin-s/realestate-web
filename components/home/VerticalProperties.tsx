@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { rentListings } from './Featured'
 import VerticalCard from '../ui/VerticalCard'
 
@@ -9,6 +9,7 @@ const VerticalProperties = () => {
         {rentListings.slice(4, 10).map((listing) => (
           <VerticalCard
             key={listing.id}
+            id={listing.id}
             img={listing.img}
             monthly_rent={listing.monthly_rent}
             rooms={listing.rooms}

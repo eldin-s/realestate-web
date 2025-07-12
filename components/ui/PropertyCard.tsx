@@ -1,7 +1,10 @@
+"use client"
+
 import { formatPrice } from "@/libs/lib";
-import React from "react";
+import { useRouter } from "next/navigation";
 
 interface PropertyCardProps {
+  id: number;
   img: string;
   monthly_rent: number;
   rooms: number;
@@ -13,6 +16,7 @@ interface PropertyCardProps {
 }
 
 const PropertyCard = ({
+  id,
   img,
   monthly_rent,
   rooms,
@@ -22,8 +26,14 @@ const PropertyCard = ({
   category,
   signature,
 }: PropertyCardProps) => {
+  const router = useRouter();
+
+  const handleClick = (listingId: number) => {
+    router.push(`/nekretnine/${listingId}`);
+  }
+
   return (
-    <>
+    <div onClick={() => handleClick(id)} className="w-full" role="button">
       <div className="overflow-hidden group font-primary cursor-pointer relative">
         <div className="overflow-hidden rounded-lg max-h-[300px] relative">
           <img
@@ -61,7 +71,7 @@ const PropertyCard = ({
           </span>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

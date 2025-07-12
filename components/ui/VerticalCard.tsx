@@ -1,6 +1,10 @@
+"use client"
+
 import { formatPrice } from "@/libs/lib";
+import { useRouter } from "next/navigation";
 
 interface VerticalCardProps {
+  id: number;
   img: string;
   monthly_rent: number;
   rooms: number;
@@ -11,6 +15,7 @@ interface VerticalCardProps {
 }
 
 const VerticalCard = ({
+  id,
   img,
   monthly_rent,
   rooms,
@@ -19,8 +24,15 @@ const VerticalCard = ({
   square_meters,
   category,
 }: VerticalCardProps) => {
+  const router = useRouter();
+
+  const handleClick = (listingId: number) => {
+    router.push(`/nekretnine/${listingId}`);
+  }
+
   return (
     <div
+      onClick={() => handleClick(id)}
       className="w-full h-full rounded-lg shadow-md overflow-hidden group cursor-pointer font-primary relative min-h-[650px] flex flex-col justify-end group transition-all"
       style={{
         backgroundImage: `url(${img})`,
