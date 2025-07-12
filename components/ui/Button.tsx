@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 interface ButtonProps {
   type?: "button" | "submit" | "reset";
-  buttonStyle?: "light" | "primary" | "secondary" | "danger";
+  buttonStyle?: "light" | "primary" | "secondary" | "danger" | "outline";
   className?: string;
   showArrow?: boolean;
   size?: "xs" | "sm" | "md" | "lg" | "rounded-xs" | "rounded-sm" | "rounded-md" | "rounded-lg";
@@ -17,6 +17,7 @@ const Button = ({ type = "button", buttonStyle, className, children, size, showA
     primary: "bg-card hover:bg-card/80 text-foreground font-semibold transition-colors duration-300",
     secondary: "bg-foreground hover:bg-foreground/80",
     danger: "bg-destructive hover:bg-destructive/80",
+    outline: "border border-gray-600 text-white hover:bg-card/80 transition-colors duration-300",
   };
 
   const sizes = {
@@ -30,14 +31,11 @@ const Button = ({ type = "button", buttonStyle, className, children, size, showA
     "rounded-lg": "p-5 text-lg",
   };
 
-        // className={`rounded-full lg:px-6 px-4 lg:py-4 py-2 text-sm lg:text-base flex items-center group cursor-pointer gap-4 ${
-
-
   return (
     <button
       type={type}
       onClick={onClick}
-      className={`rounded-full flex items-center group cursor-pointer gap-4 text-nowrap ${
+      className={`rounded-full flex items-center group cursor-pointer gap-4 text-nowrap font-primary ${
         buttonStyle ? buttonStyles[buttonStyle] : buttonStyles.primary
       } 
       ${size ? sizes[size] : sizes.md}

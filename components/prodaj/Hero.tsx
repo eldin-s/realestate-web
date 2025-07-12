@@ -1,6 +1,3 @@
-import React from "react";
-import { AimIcon } from "../Icons";
-import { Search } from "lucide-react";
 import Button from "../ui/Button";
 
 const Hero = () => {

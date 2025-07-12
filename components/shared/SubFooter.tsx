@@ -1,6 +1,7 @@
 import { FacebookIcon, Instagram, Linkedin, Youtube } from "lucide-react";
 import Image from "next/image";
 import { TikTokIcon, TwitterXIcon } from "../Icons";
+import Link from "next/link";
 
 const socials = [
   { name: "Facebook", icon: <FacebookIcon className="w-4 h-4" /> },
@@ -69,17 +70,16 @@ const SubFooter = () => {
         <div className="flex flex-col lg:flex-row gap-2 my-4">
           <ul className="flex items-start justify-start gap-x-4 gap-y-1 flex-wrap">
             {links.map((link, index) => (
-              <a
+              <Link
                 key={index}
                 href={link.href}
                 className="text-sm text-muted font-primary hover:underline font-bold transition-colors"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </ul>
 
-          <p>Web razvijen od strane Eldin Skenderi</p>
         </div>
 
         <p className="text-sm text-gray-500 font-primary italic">
