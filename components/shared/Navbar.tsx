@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Button from "../ui/Button";
+import Link from "next/link";
 
 const navItems = [
   {
@@ -83,7 +84,7 @@ const Navbar = () => {
     >
       <nav className="flex items-center justify-between gap-2 font-[family-name:var(--font-quicksand)]">
         <div className="pl-8">
-          <a href="/">
+          <Link href="/">
 
             <Image
               src="/real-estate.png"
@@ -92,7 +93,7 @@ const Navbar = () => {
               width={150}
               height={40}
             />
-          </a>
+          </Link>
         </div>
         {/* Desktop nav */}
         <div className="flex items-center justify-between gap-4">
@@ -101,7 +102,7 @@ const Navbar = () => {
               key={index}
               className="relative hidden group font-semibold text-base xl:flex items-center"
             >
-              <a
+              <Link
                 href={item.url || "#"}
                 className="pt-2 pb-1 mx-2 text-gray-800 dark:text-white rounded-lg transition-colors relative after:bg-white after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer group"
               >
@@ -109,28 +110,28 @@ const Navbar = () => {
                 {item.links && (
                   <ChevronDown className="inline ml-1 h-4 w-4 transform rotate-0 group-hover:-rotate-180 transition-transform" />
                 )}
-              </a>
+              </Link>
               {item.links && (
                 <div className="absolute left-0 top-8 hidden min-w-full group-hover:block bg-white dark:bg-gray-800 shadow-lg rounded-lg">
                   {item.links.map((subItem, subIndex) => (
-                    <a
+                    <Link
                       key={subIndex}
                       href={subItem.url}
                       className="block px-4 py-2 text-gray-800 dark:text-gray-200 rounded-lg transition-colors text-nowrap"
                     >
                       {subItem.label}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
             </div>
           ))}
-          <a
+          <Link
             href={"#"}
             className="hidden xl:inline-block pt-2 pb-1 mx-2 text-gray-800 dark:text-white rounded-lg transition-colors relative after:bg-white after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer font-semibold"
           >
             1.887 Mansion
-          </a>
+          </Link>
           <div className="hidden border border-gray-400 rounded-full px-4 py-2 xl:mr-4 sm:flex items-center justify-center gap-3">
             <span>
               <Search className="w-4 h-4" />
@@ -206,26 +207,26 @@ const Navbar = () => {
                 <div className="flex lg:flex-row flex-col items-start justify-start gap-12">
                   <div className="flex flex-col items-start justify-start lg:gap-4 gap-0 lg:border-r border-gray-200 pr-8">
                     {navItems.map((item, index) => (
-                      <a
+                      <Link
                         key={index}
                         href={item.url || "#"}
                         className="pt-2 pb-1 mx-2 rounded-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer xl:text-4xl text-2xl font-primary font-extrabold"
                       >
                         {item.label}{" "}
-                      </a>
+                      </Link>
                     ))}
-                    <a
+                    <Link
                       href={"#"}
                       className="pt-2 pb-1 mx-2 rounded-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer xl:text-4xl text-2xl font-primary font-extrabold"
                     >
                       Nove izgradnje
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href={"#"}
                       className="pt-2 pb-1 mx-2 rounded-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer xl:text-4xl text-2xl font-primary font-extrabold"
                     >
                       Agenti
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="flex-1 pl-2">

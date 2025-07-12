@@ -6,8 +6,9 @@ import Button from "@/components/ui/Button";
 import Image from "next/image";
 import { PiShareFat } from "react-icons/pi";
 
-const Nekretnine = ({ params }: { params: { id: string } }) => {
-  const propertyId = parseInt(params.id);
+const Nekretnine = async ({ params }: { params: Promise<{ id: string }> }) => {
+  const { id } = await params;
+  const propertyId = parseInt(id);
   const property = rentListings.find((listing) => listing.id === propertyId);
 
   if (!property) {

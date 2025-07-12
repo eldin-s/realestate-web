@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState<"#pregled" | "#karakteristike">(
@@ -18,7 +19,7 @@ const Tabs = () => {
       <div className="flex border-b border-gray-200 justify-between">
         <div className="lg:flex hidden">
           {tabs.map((tab) => (
-            <a
+            <Link
               href={tab.id}
               key={tab.id}
               onClick={(e) => {
@@ -39,7 +40,7 @@ const Tabs = () => {
               }`}
             >
               {tab.label}
-            </a>
+            </Link>
           ))}
         </div>
 
