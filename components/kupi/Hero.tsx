@@ -1,3 +1,5 @@
+import { ChevronDown } from "lucide-react";
+import Button from "../ui/Button";
 
 
 const Hero = () => {
@@ -15,11 +17,12 @@ const Hero = () => {
           height: "500px",
         }}
       >
-        <div className="z-10 font-[family-name:var(--font-montserrat)] flex flex-col">
+        <div className="z-10 font-[family-name:var(--font-montserrat)] flex flex-col items-center gap-4">
           <h1 className="lg:text-7xl text-4xl font-extrabold text-center">
-            Naše ekskluzivne kuće <br /> za iznajmljivanje
+            Vaš dom vas čeka
           </h1>
 
+          <Button className="w-fit">Istraži naše nekretnine <ChevronDown className="w-4 h-4" /></Button>
         </div>
         <div
           className="absolute left-0 bottom-0 w-full z-0"

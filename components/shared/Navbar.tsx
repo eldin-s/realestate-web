@@ -28,11 +28,15 @@ const navItems = [
     url: "/prodaj",
   },
   {
+    label: "Nove izgradnje",
+    url: "/nove-izgradnje",
+  },
+  {
     label: "Agenti",
     links: [
       {
         label: "Pronađi agenta",
-        url: "/agenti/pronađi",
+        url: "/timovi/",
       },
       {
         label: "Pridruži se",
@@ -79,16 +83,19 @@ const Navbar = () => {
     >
       <nav className="flex items-center justify-between gap-2 font-[family-name:var(--font-quicksand)]">
         <div className="pl-8">
-          <Image
-            src="/real-estate.png"
-            className="w-full max-w-[200px] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] object-contain h-auto"
-            alt="Logo"
-            width={150}
-            height={40}
-          />
+          <a href="/">
+
+            <Image
+              src="/real-estate.png"
+              className="w-full max-w-[200px] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] object-contain h-auto"
+              alt="Logo"
+              width={150}
+              height={40}
+            />
+          </a>
         </div>
         {/* Desktop nav */}
-        <div className="flex items-center justify-between gap-6">
+        <div className="flex items-center justify-between gap-4">
           {navItems.map((item, index) => (
             <div
               key={index}
@@ -104,7 +111,7 @@ const Navbar = () => {
                 )}
               </a>
               {item.links && (
-                <div className="absolute left-0 hidden min-w-full group-hover:block bg-white dark:bg-gray-800 shadow-lg rounded-lg">
+                <div className="absolute left-0 top-8 hidden min-w-full group-hover:block bg-white dark:bg-gray-800 shadow-lg rounded-lg">
                   {item.links.map((subItem, subIndex) => (
                     <a
                       key={subIndex}

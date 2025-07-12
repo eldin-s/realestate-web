@@ -65,7 +65,7 @@ const Featured = () => {
       </div>
       <div className="flex justify-center gap-2">
         <button
-          className="px-5 py-2 rounded-full border border-gray-300 cursor-pointer text-card disabled:cursor-not-allowed"
+          className="px-3 md:px-5 py-0 md:py-2  rounded-full border border-gray-300 cursor-pointer text-card disabled:cursor-not-allowed"
           onClick={() => setPage((p) => Math.max(1, p - 1))}
           disabled={page === 1}
         >
@@ -77,7 +77,7 @@ const Featured = () => {
           ) : (
             <button
               key={item}
-              className={`px-6 py-4 rounded-full border cursor-pointer ${item === page ? "bg-card text-primary border border-primary " : "text-card"}`}
+              className={`px-4 py-2 md:px-6 md:py-4 rounded-full border cursor-pointer ${item === page ? "bg-card text-primary border border-primary " : "text-card"}`}
               onClick={() => typeof item === 'number' && setPage(item as number)}
               disabled={item === page}
             >
@@ -86,7 +86,7 @@ const Featured = () => {
           )
         )}
         <button
-          className="px-5 py-2 rounded-full border border-gray-300 cursor-pointer text-card disabled:cursor-not-allowed"
+          className="px-3 md:px-5 py-0 md:py-2 rounded-full border border-gray-300 cursor-pointer flex items-center justify-center text-card disabled:cursor-not-allowed"
           onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
           disabled={page === totalPages}
         >

@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
 import Button from "./Button";
 
-const rentListings = [
+const newRentListings = [
   {
     id: 1,
     created_at: "2025-06-01T10:15:00Z",
@@ -175,7 +175,7 @@ export const RentCarousel = () => {
         ref={containerRef}
         className="flex overflow-x-auto space-x-4 py-4 px-2 scrollbar-hide lg:min-h-[600px]"
       >
-        {rentListings.map((listing) => (
+        {newRentListings.map((listing) => (
           <div
             key={listing.id}
             className="flex-shrink-0 group relative h-[300px] lg:h-[480px] w-58 hover:w-[530px] hover:h-[530px] transition-all duration-300 ease-in-out bg-white shadow-md rounded-lg overflow-hidden cursor-pointer"

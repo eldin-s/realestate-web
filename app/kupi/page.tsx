@@ -1,17 +1,17 @@
 import Contact from "@/components/home/Contact";
+import Featured from "@/components/home/Featured";
 import Regions from "@/components/home/Regions";
-import Featured from "@/components/iznajmi/Featured";
-import Hero from "@/components/iznajmi/Hero";
+import Hero from "@/components/kupi/Hero";
 
-const Iznajmi = () => {
+const Kupi = () => {
   return (
     <>
       <Hero />
       <Regions />
       <Featured />
-      <Contact />
+      <Contact /> 
     </>
   );
 };
 
-export default Iznajmi;
+export default Kupi;
