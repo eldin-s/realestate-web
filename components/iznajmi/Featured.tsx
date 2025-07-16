@@ -52,7 +52,7 @@ const Featured = () => {
             <PropertyCard
               key={listing.id}
               id={listing.id}
-              img={listing.img}
+              img={listing.images}
               monthly_rent={listing.monthly_rent}
               rooms={listing.rooms}
               location={listing.location}

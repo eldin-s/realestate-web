@@ -4,9 +4,10 @@ import { formatPrice } from "@/libs/lib";
 import { useRouter } from "next/navigation";
 
 interface VerticalCardProps {
-  id: number;
-  img: string;
-  monthly_rent: number;
+  id: string;
+  images: string[];
+  monthly_rent?: number;
+  price?: number;
   rooms: number;
   location: string;
   baths: number;
@@ -16,8 +17,9 @@ interface VerticalCardProps {
 
 const VerticalCard = ({
   id,
-  img,
+  images,
   monthly_rent,
+  price,
   rooms,
   location,
   baths,
@@ -26,7 +28,7 @@ const VerticalCard = ({
 }: VerticalCardProps) => {
   const router = useRouter();
 
-  const handleClick = (listingId: number) => {
+  const handleClick = (listingId: string) => {
     router.push(`/nekretnine/${listingId}`);
   }
 
@@ -35,7 +37,7 @@ const VerticalCard = ({
       onClick={() => handleClick(id)}
       className="w-full h-full rounded-lg shadow-md overflow-hidden group cursor-pointer font-primary relative min-h-[650px] flex flex-col justify-end group transition-all"
       style={{
-        backgroundImage: `url(${img})`,
+        backgroundImage: `url(${images[0]})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         transition: "transform 0.5s cubic-bezier(0.4,0,0.2,1)",
@@ -44,7 +46,7 @@ const VerticalCard = ({
       <div
         className="absolute inset-0 z-0 transition-transform duration-500 group-hover:scale-110"
         style={{
-          backgroundImage: `url(${img})`,
+          backgroundImage: `url(${images[0]})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "brightness(1)",
@@ -52,7 +54,8 @@ const VerticalCard = ({
       />
       <div className="p-4 mt-full z-20 relative">
         <h2 className="mb-1 text-base">
-          {formatPrice(monthly_rent)} € / mesečno
+          {monthly_rent && `${formatPrice(monthly_rent)} € / mesečno`}
+          {price && `${formatPrice(price)} €`}
         </h2>
         <p className="text-xs">{location}</p>
         <div className="text-xs w-full flex items-center gap-4">

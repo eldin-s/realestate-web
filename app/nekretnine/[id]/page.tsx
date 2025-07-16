@@ -8,8 +8,7 @@ import { PiShareFat } from "react-icons/pi";
 
 const Nekretnine = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params;
-  const propertyId = parseInt(id);
-  const property = rentListings.find((listing) => listing.id === propertyId);
+  const property = rentListings.find((listing) => listing.id === id);
 
   if (!property) {
     return <div>Property not found</div>;
@@ -17,40 +16,40 @@ const Nekretnine = async ({ params }: { params: Promise<{ id: string }> }) => {
 
   return (
     <>
-      <div className="w-full lg:p-24 md:p-18 lg:pt-40 p-6 z-0 relative bg-black text-card">
+      <div className="w-full lg:p-24 md:p-18 lg:pt-40 sm:pt-44 md:pt-44 p-6 z-0 relative bg-black text-card">
         <div className="w-full flex flex-wrap gap-4 lg:flex-row flex-col">
           <div className="flex-[2] rounded-2xl overflow-hidden">
             <img
-              src="/img/buildings.jpg"
+              src={property.images[0]}
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full max-h-[600px] object-cover"
             />
           </div>
           <div className="flex-1 grid grid-cols-2 gap-4">
             <div className="rounded-2xl overflow-hidden">
               <img
-                src="/img/buildings.jpg"
+                src={property.images[1]}
                 alt=""
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="rounded-2xl overflow-hidden">
               <img
-                src="/img/buildings.jpg"
+                src={property.images[2]}
                 alt=""
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="rounded-2xl overflow-hidden">
               <img
-                src="/img/buildings.jpg"
+                src={property.images[3]}
                 alt=""
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="rounded-2xl overflow-hidden">
               <img
-                src="/img/buildings.jpg"
+                src={property.images[4]}
                 alt=""
                 className="w-full h-full object-cover"
               />
@@ -75,7 +74,7 @@ const Nekretnine = async ({ params }: { params: Promise<{ id: string }> }) => {
         </div>
       </div>
 
-      <Tabs />
+      <Tabs description={property.description} />
       <div className="flex gap-8 lg:px-24 md:px-18 px-6 py-8 z-0 flex-wrap relative bg-foreground">
         <div className="flex-1">
             <Overview property={property} />
@@ -84,7 +83,7 @@ const Nekretnine = async ({ params }: { params: Promise<{ id: string }> }) => {
 
         <div className="">
             <Image
-                src="/img/buildings.jpg"
+                src={property.images[0]}
                 alt="Property Image"
                 width={600}
                 height={600}

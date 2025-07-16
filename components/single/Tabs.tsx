@@ -4,7 +4,7 @@ import { useState } from "react";
 import Button from "@/components/ui/Button";
 import Link from "next/link";
 
-const Tabs = () => {
+const Tabs = ({description}: {description: string}) => {
   const [activeTab, setActiveTab] = useState<"#pregled" | "#karakteristike">(
     "#pregled"
   );
@@ -16,7 +16,7 @@ const Tabs = () => {
 
   return (
     <div className="w-full lg:px-24 md:px-18 px-6 z-0 relative bg-foreground text-card pt-8">
-      <div className="flex border-b border-gray-200 justify-between">
+      <div className="flex border-b pb-8 lg:pb-0 border-gray-200 justify-between">
         <div className="lg:flex hidden">
           {tabs.map((tab) => (
             <Link
@@ -56,13 +56,7 @@ const Tabs = () => {
         Opis nekretnine
       </h1>
       <p className="py-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-        quibusdam veritatis, veniam iure necessitatibus magni aspernatur sequi
-        expedita perspiciatis, nesciunt corrupti ipsum ut! Sequi amet fugiat,
-        totam a, odit aliquid mollitia placeat perferendis quasi itaque modi
-        nostrum, tenetur fugit similique ipsum magnam temporibus iure. Fugit
-        corrupti quod, alias nesciunt, est ipsum dolor beatae temporibus
-        explicabo asperiores veritatis odio aspernatur excepturi?
+        {description}
       </p>
     </div>
   );
