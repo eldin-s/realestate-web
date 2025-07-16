@@ -81,7 +81,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`md:p-4 md:pt-8 pt-4 mx-2 rounded-full fixed right-0 left-0 z-50 transition-all duration-300 ${
+      className={`md:p-4 md:pt-8 pt-2 mx-2 rounded-full fixed right-0 left-0 z-50 transition-all duration-300 ${
         scrolled || isPropertyDetailsPage
           ? "top-4 bg-card/90 shadow-lg md:py-8 py-4"
           : "top-16 bg-transparent"
@@ -92,8 +92,8 @@ const Navbar = () => {
           <Link href="/">
 
             <Image
-              src="/real-estate.png"
-              className="w-full max-w-[200px] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] object-contain h-auto"
+              src="/logos/logo.svg"
+              className="w-full max-w-[100px] sm:max-w-[120px] md:max-w-[140px] lg:max-w-[160px] xl:max-w-[180px] object-contain h-auto"
               alt="Logo"
               width={150}
               height={40}

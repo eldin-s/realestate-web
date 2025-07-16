@@ -3,6 +3,7 @@ import Features from "@/components/single/Features";
 import Overview from "@/components/single/Overview";
 import Tabs from "@/components/single/Tabs";
 import Button from "@/components/ui/Button";
+import { formatPrice } from "@/libs/lib";
 import Image from "next/image";
 import { PiShareFat } from "react-icons/pi";
 
@@ -59,9 +60,12 @@ const Nekretnine = async ({ params }: { params: Promise<{ id: string }> }) => {
         <div className="space-y-2 mt-6">
           <h1 className="text-4xl text-white font-black">{property.title}</h1>
           <p className="text-gray-400">
-            526 N Ocean Boulevard, Delray Beach, FL 33483
+            {property.location}
           </p>
-          <p className="text-gray-300 font-bold text-3xl">$44,900,000</p>
+          <p className="text-gray-300 font-bold text-3xl">
+            {property.monthly_rent && `${formatPrice(property.monthly_rent)} € / mesečno`}
+            {property.price && `${formatPrice(property.price)} €`}
+          </p>
 
           <div className="flex gap-3 text-gray-400 items-center">
             <span>{property.rooms} soba</span>
