@@ -10,8 +10,8 @@ const VerticalProperties = () => {
           <VerticalCard
             key={listing.id}
             id={listing.id}
-            img={listing.img}
-            monthly_rent={listing.monthly_rent}
+            images={listing.images}
+            monthly_rent={listing?.monthly_rent}
             rooms={listing.rooms}
             location={listing.location}
             baths={listing.baths}

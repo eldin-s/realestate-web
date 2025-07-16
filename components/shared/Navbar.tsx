@@ -14,6 +14,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Button from "../ui/Button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navItems = [
   {
@@ -50,6 +51,10 @@ const navItems = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuModalOpen, setMenuModalOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Check if current route is a property details page
+  const isPropertyDetailsPage = pathname.startsWith('/nekretnine/');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,10 +82,10 @@ const Navbar = () => {
   return (
     <div
       className={`md:p-4 md:pt-8 pt-4 mx-2 rounded-full fixed right-0 left-0 z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || isPropertyDetailsPage
           ? "top-4 bg-card/90 shadow-lg md:py-8 py-4"
           : "top-16 bg-transparent"
-      }`}
+      } ${isPropertyDetailsPage ? "!bg-white text-card" : ""}`}
     >
       <nav className="flex items-center justify-between gap-2 font-[family-name:var(--font-quicksand)]">
         <div className="pl-8">
@@ -100,11 +105,11 @@ const Navbar = () => {
           {navItems.map((item, index) => (
             <div
               key={index}
-              className="relative hidden group font-semibold text-base xl:flex items-center"
+              className="relative hidden group font-semibold text-base 2xl:flex items-center"
             >
               <Link
                 href={item.url || "#"}
-                className="pt-2 pb-1 mx-2 text-gray-800 dark:text-white rounded-lg transition-colors relative after:bg-white after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer group"
+                className="pt-2 pb-1 mx-2 rounded-lg transition-colors relative after:bg-white after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer group"
               >
                 {item.label}{" "}
                 {item.links && (
@@ -128,7 +133,7 @@ const Navbar = () => {
           ))}
           <Link
             href={"#"}
-            className="hidden xl:inline-block pt-2 pb-1 mx-2 text-gray-800 dark:text-white rounded-lg transition-colors relative after:bg-white after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer font-semibold"
+            className="hidden xl:inline-block pt-2 pb-1 mx-2 rounded-lg transition-colors relative after:bg-white after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer font-semibold"
           >
             1.887 Mansion
           </Link>
@@ -139,7 +144,7 @@ const Navbar = () => {
             <span className="font-bold">Sve Force Mansion</span>
           </div>
 
-          <div className="hidden border bg-white rounded-full px-4 py-2 xl:mr-4 lg:flex items-center justify-center gap-3">
+          <div className={`hidden border ${isPropertyDetailsPage ? "border-gray-400": ""} bg-white rounded-full px-4 py-2 xl:mr-4 lg:flex items-center justify-center gap-3`}>
             <span className="font-bold text-blue-700">Sve ostalo</span>
           </div>
           <div className="hidden border border-gray-400 rounded-full p-3 xl:mr-4 md:flex items-center justify-center gap-3">

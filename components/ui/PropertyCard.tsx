@@ -4,21 +4,24 @@ import { formatPrice } from "@/libs/lib";
 import { useRouter } from "next/navigation";
 
 interface PropertyCardProps {
-  id: number;
-  img: string;
-  monthly_rent: number;
+  id: string;
+  img: string[];
+  monthly_rent?: number | undefined;
+  price?: number;
   rooms: number;
   location: string;
   baths: number;
   square_meters: number;
   category: string;
   signature?: boolean;
+  garage?: string;
 }
 
 const PropertyCard = ({
   id,
   img,
   monthly_rent,
+  price,
   rooms,
   location,
   baths,
@@ -28,8 +31,8 @@ const PropertyCard = ({
 }: PropertyCardProps) => {
   const router = useRouter();
 
-  const handleClick = (listingId: number) => {
-    router.push(`/nekretnine/${listingId}`);
+  const handleClick = (listingId: string) => {
+    router.push(`/nekretnine/${encodeURIComponent(String(listingId))}`);
   }
 
   return (
@@ -37,7 +40,7 @@ const PropertyCard = ({
       <div className="overflow-hidden group font-primary cursor-pointer relative">
         <div className="overflow-hidden rounded-lg max-h-[300px] relative">
           <img
-            src={img}
+            src={img[0]}
             alt={`Slika za lokaciju ${location}`}
             className="group-hover:scale-105 transition-transform duration-300 ease-in-out w-full object-cover"
           />
@@ -51,7 +54,8 @@ const PropertyCard = ({
         </div>
         <div className="pt-4 text-card">
           <h2 className="font-bold lg:mb-2 mb-1 lg:text-lg text-sm">
-            {formatPrice(monthly_rent)} € / mesečno
+            {monthly_rent && `${formatPrice(monthly_rent)} € / mesečno`}
+            {price && `${formatPrice(price)} €`}
           </h2>
           <p className="lg:mb-2 mb-1">{location}</p>
           <div className="font-bold w-full flex items-center gap-4 text-sm lg:text-base">
