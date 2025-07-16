@@ -81,7 +81,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`md:p-4 md:pt-8 pt-2 mx-2 rounded-full fixed right-0 left-0 z-50 transition-all duration-300 ${
+      className={`md:p-4 md:pt-8 pt-4 mx-2 rounded-full fixed right-0 left-0 z-50 transition-all duration-300 ${
         scrolled || isPropertyDetailsPage
           ? "top-4 bg-card/90 shadow-lg md:py-8 py-4"
           : "top-16 bg-transparent"
@@ -152,10 +152,10 @@ const Navbar = () => {
           </div>
 
           <div
-            className="border border-gray-400 rounded-full px-4 py-2 mr-4 flex items-center justify-center gap-3 cursor-pointer"
+            className="border border-gray-400 rounded-full md:px-4 md:py-2 px-1 py-1 mr-4 flex items-center justify-center gap-3 cursor-pointer"
             onClick={() => setMenuModalOpen(true)}
           >
-            <span className="font-bold">Menu</span>
+            <span className="font-bold hidden sm:inline-block">Menu</span>
             <span>
               <Menu />
             </span>

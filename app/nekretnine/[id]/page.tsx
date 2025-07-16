@@ -17,7 +17,7 @@ const Nekretnine = async ({ params }: { params: Promise<{ id: string }> }) => {
 
   return (
     <>
-      <div className="w-full lg:p-24 md:p-18 lg:pt-40 sm:pt-44 md:pt-44 p-6 z-0 relative bg-black text-card">
+      <div className="w-full lg:p-24 md:p-18 lg:pt-40 sm:pt-28 md:pt-40 pt-24 p-6 z-0 relative bg-black text-card">
         <div className="w-full flex flex-wrap gap-4 lg:flex-row flex-col">
           <div className="flex-[2] rounded-2xl overflow-hidden">
             <img
@@ -26,7 +26,7 @@ const Nekretnine = async ({ params }: { params: Promise<{ id: string }> }) => {
               className="w-full h-full max-h-[600px] object-cover"
             />
           </div>
-          <div className="flex-1 grid grid-cols-2 gap-4">
+          <div className="flex-1 grid lg:grid-cols-2 grid-cols-4 gap-4">
             <div className="rounded-2xl overflow-hidden">
               <img
                 src={property.images[1]}
