@@ -33,8 +33,8 @@ const SubFooter = () => {
         <div className="flex items-start justify-between gap-4 flex-1 flex-col lg:flex-row ">
           <div className="flex items-center justify-between gap-4 flex-1">
             <Image
-              src="/real-estate.png"
-              className="w-full max-w-[150px] xl:max-w-[250px] object-contain h-auto"
+              src="/logos/logoblack.svg"
+              className="w-full max-w-[120px] xl:max-w-[200px] object-contain h-auto"
               alt="Logo"
               width={250}
               height={70}
