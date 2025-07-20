@@ -1,5 +1,4 @@
-import React from 'react'
-import Button from '../ui/Button'
+import CustomButton from '@/components/custom/CustomButton'
 
 interface BlogPost {
   id: number
@@ -75,7 +74,7 @@ const Sections = () => {
                   </p>
                 </div>
                 
-                <Button showArrow={true}>{post.buttonText}</Button>
+                <CustomButton showArrow={true}>{post.buttonText}</CustomButton>
               </div>
             </div>
           ))}

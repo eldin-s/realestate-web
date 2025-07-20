@@ -1,8 +1,8 @@
+import CustomButton from "@/components/custom/CustomButton";
 import { rentListings } from "@/components/home/Featured";
 import Features from "@/components/single/Features";
 import Overview from "@/components/single/Overview";
 import Tabs from "@/components/single/Tabs";
-import Button from "@/components/ui/Button";
 import { formatPrice } from "@/libs/lib";
 import Image from "next/image";
 import { PiShareFat } from "react-icons/pi";
@@ -73,7 +73,7 @@ const Nekretnine = async ({ params }: { params: Promise<{ id: string }> }) => {
             <span>{property.baths} kupatila</span>
             <div className="w-1 h-1 rounded-full bg-gray-400 mt-0.5" />
             <span>{property.square_meters} m<sup>2</sup></span>
-            <Button buttonStyle="outline" size="sm" className="font-bold">Podeli <PiShareFat className="w-4 h-4" /></Button>
+            <CustomButton buttonStyle="outline" size="sm" className="font-bold">Podeli <PiShareFat className="w-4 h-4" /></CustomButton>
           </div>
         </div>
       </div>

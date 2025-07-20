@@ -3,7 +3,7 @@
 import "keen-slider/keen-slider.min.css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
-import Button from "./Button";
+import CustomButton from "../custom/CustomButton";
 
 const newRentListings = [
   {
@@ -235,9 +235,9 @@ export const RentCarousel = () => {
             <ChevronRight />
           </button>
         </div>
-        <Button buttonStyle="primary" showArrow={true}>
-          Pogledaj sve 
-        </Button>
+        <CustomButton buttonStyle="primary" showArrow={true}>
+          Pogledaj sve
+        </CustomButton>
       </div>
     </>
   );

@@ -11,10 +11,10 @@ import {
   XIcon,
 } from "lucide-react";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import Button from "../ui/Button";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import CustomButton from "@/components/custom/CustomButton";
 
 const navItems = [
   {
@@ -147,9 +147,12 @@ const Navbar = () => {
           <div className={`hidden border ${isPropertyDetailsPage ? "border-gray-400": ""} bg-white rounded-full px-4 py-2 xl:mr-4 lg:flex items-center justify-center gap-3`}>
             <span className="font-bold text-blue-700">Sve ostalo</span>
           </div>
-          <div className="hidden border border-gray-400 rounded-full p-3 xl:mr-4 md:flex items-center justify-center gap-3">
+          <Link
+            href={"/dashboard"}
+            className="hidden border border-gray-400 rounded-full p-3 xl:mr-4 md:flex items-center justify-center gap-3"
+          >
             <User className="w-4 h-4" />
-          </div>
+          </Link>
 
           <div
             className="border border-gray-400 rounded-full md:px-4 md:py-2 px-1 py-1 mr-4 flex items-center justify-center gap-3 cursor-pointer"
@@ -176,25 +179,25 @@ const Navbar = () => {
                   height={50}
                 />
                 <div className="flex items-center justify-center gap-2">
-                  <Button
+                  <CustomButton
                     size="rounded-sm"
                     buttonStyle="light"
                     className="border border-gray-400 hidden sm:flex"
                   >
                     1-877-FORCE <Phone className="w-4 h-4" />
-                  </Button>
-                  <Button size="rounded-sm">
+                  </CustomButton>
+                  <CustomButton size="rounded-sm">
                     <span className="hidden sm:inline-block">Pronađi dom</span>
                     <SearchIcon className="w-4 h-4" />
-                  </Button>
-                  <Button
+                  </CustomButton>
+                  <CustomButton
                     size="rounded-sm"
                     buttonStyle="light"
                     className="border border-gray-400"
                     onClick={() => setMenuModalOpen(false)}
                   >
                     <XIcon className="w-4 h-4" />
-                  </Button>
+                  </CustomButton>
                 </div>
               </div>
 
@@ -348,16 +351,16 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex items-center justify-center gap-10 lg:mt-20 mt-8">
-                      <Button size="md">
+                      <CustomButton size="md">
                         Agent Login <LockKeyhole />
-                      </Button>
-                      <Button size="md"
+                      </CustomButton>
+                      <CustomButton size="md"
                         showArrow={true}
                         buttonStyle="light"
                         className="border border-gray-400"
                       >
                         Pridruži se
-                      </Button>
+                      </CustomButton>
                     </div>
                   </div>
                 </div>

@@ -1,6 +1,6 @@
 "use client"
 
-import Button from "../ui/Button";
+import CustomButton from "@/components/custom/CustomButton";
 import { useState } from "react";
 
 const cards = [
@@ -81,7 +81,7 @@ const Studios = () => {
                   isExpanded ? "opacity-100 max-h-96" : "opacity-0 max-h-0"
                 }`}>
                   <p className="text-left mb-4">{card.description}</p>
-                  <Button className="xl:mt-4" showArrow={true}>{card.btnText}</Button>
+                  <CustomButton className="xl:mt-4" showArrow={true}>{card.btnText}</CustomButton>
                 </div>
               </div>
             );

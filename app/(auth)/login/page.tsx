@@ -1,9 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { signIn } from "@/lib/auth";
 import InputField from "@/components/ui/Input";
-import Button from "@/components/ui/Button";
+import CustomButton from "@/components/custom/CustomButton";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -12,7 +12,7 @@ const LoginPage = () => {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setError("");
     setLoading(true);
@@ -57,7 +57,7 @@ const LoginPage = () => {
             required
           />
         </div>
-        <Button
+        <CustomButton
           type="submit"
           disabled={loading}
           buttonStyle="outline"
@@ -65,7 +65,7 @@ const LoginPage = () => {
           size="sm"
         >
           {loading ? "Prijavljivanje..." : "Prijavi se"}
-        </Button>
+        </CustomButton>
         <p className="mt-4 text-center text-sm text-gray-600">
           Nemate nalog?{" "}
           <a href="/signup" className="text-blue-500 hover:underline">

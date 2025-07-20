@@ -26,7 +26,7 @@ const InputField: React.FC<InputFieldProps> = ({
       <input
         id={name}
         name={name}
-        className={`border rounded-md p-3 text-sm focus:outline-double focus:outline-yellow-700 focus:ring-0 focus:outline-offset-2 autofill:bg-yellow-200 ${inputClassName}`}
+        className={`border rounded-md p-3 text-sm focus:outline-double focus:outline-gold-primary focus:ring-0 focus:outline-offset-2 ${inputClassName}`}
         {...rest}
       />
       {error && <p className="text-sm">{error}</p>}

@@ -1,5 +1,5 @@
 import { MapPin } from "lucide-react";
-import Button from "./Button";
+import CustomButton from "@/components/custom/CustomButton";
 
 const newRentListings = [
   {
@@ -211,7 +211,7 @@ export const NewProperties = () => {
         ))}
       </div>
 
-      <Button showArrow={true} className="ml-auto mt-10">Pogledaj Sve</Button>
+      <CustomButton showArrow={true} className="ml-auto mt-10">Pogledaj Sve</CustomButton>
     </div>
   );
 };

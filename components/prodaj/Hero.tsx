@@ -1,4 +1,4 @@
-import Button from "../ui/Button";
+import CustomButton from "@/components/custom/CustomButton";
 
 const Hero = () => {
   return (
@@ -31,7 +31,7 @@ const Hero = () => {
             />
 
             <div className="absolute md:right-4 right-2 top-1/2 -translate-y-1/2 flex md:gap-4 gap-2 items-center">
-              <Button>Nastavi</Button>
+              <CustomButton>Nastavi</CustomButton>
             </div>
           </div>
         </div>

@@ -1,5 +1,4 @@
-import React from "react";
-import Button from "../ui/Button";
+import CustomButton from "@/components/custom/CustomButton";
 
 const Company = () => {
   return (
@@ -19,7 +18,7 @@ const Company = () => {
           klijentima <br /> predstavlja najpoželjnije luksuzne nekretnine u
           regionu
         </p>
-        <Button className={"z-10"} showArrow={false} buttonStyle="light">Pogledaj sve</Button>
+        <CustomButton className={"z-10"} showArrow={false} buttonStyle="light">Pogledaj sve</CustomButton>
       </div>
       <div
         className="absolute left-0 bottom-0 w-full z-0"

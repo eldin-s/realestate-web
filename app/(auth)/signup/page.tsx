@@ -1,9 +1,10 @@
 "use client";
-import React, { useState } from "react";
+
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { signUp } from "@/lib/auth";
 import InputField from "@/components/ui/Input";
-import Button from "@/components/ui/Button";
+import CustomButton from "@/components/custom/CustomButton";
 
 const SignupPage = () => {
   const [email, setEmail] = useState("");
@@ -83,7 +84,7 @@ const SignupPage = () => {
             required
           />
         </div>
-        <Button
+        <CustomButton
           type="submit"
           disabled={loading}
           buttonStyle="outline"
@@ -91,7 +92,7 @@ const SignupPage = () => {
           size="sm"
         >
           {loading ? "Registrovanje..." : "Registruj se"}
-        </Button>
+        </CustomButton>
         <p className="mt-4 text-center text-sm text-gray-600">
           Već imate nalog?{" "}
           <a href="/login" className="text-blue-500 hover:underline">

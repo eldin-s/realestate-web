@@ -40,7 +40,7 @@ export default function DashboardPage() {
   return (
     <div className="p-4">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold">Dashboard</h1>
+        <h1 className="text-2xl font-bold">Vaša upravna tabla</h1>
         <button
           onClick={handleSignOut}
           className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
@@ -49,12 +49,11 @@ export default function DashboardPage() {
         </button>
       </div>
       
-      <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-4">Welcome to your dashboard!</h2>
-        <p className="text-gray-600 mb-4">This is a protected route.</p>
+      <div className="bg-background rounded-lg shadow">
+        <h2 className="text-xl font-semibold mb-2">Dobro došli {user?.user_metadata.last_name}!</h2>
         
         {user && (
-          <div className="bg-gray-50 p-4 rounded">
+          <div className=" p-4 rounded">
             <h3 className="font-medium mb-2">User Information:</h3>
             <p><strong>Email:</strong> {user.email}</p>
             <p><strong>User ID:</strong> {user.id}</p>

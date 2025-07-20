@@ -1,7 +1,7 @@
 'use client'
 
-import React, { useEffect, useRef } from "react";
-import Button from "../ui/Button";
+import { useEffect, useRef } from "react";
+import CustomButton from "@/components/custom/CustomButton";
 
 const VideoSection = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -42,7 +42,7 @@ const VideoSection = () => {
           klijentima predstavlja najpoželjnije luksuzne nekretnine na svetu
           vredne preko 10 miliona dolara.
         </p>
-        <Button className="mt-6">Pogledaj Sve</Button>
+        <CustomButton className="mt-6">Pogledaj Sve</CustomButton>
       </div>
     </div>
   );

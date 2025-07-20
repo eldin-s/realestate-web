@@ -1,6 +1,5 @@
-import React from "react";
-import Button from "../ui/Button";
 import { Check, Download } from "lucide-react";
+import CustomButton from "@/components/custom/CustomButton";
 
 const Book = () => {
   return (
@@ -14,7 +13,7 @@ const Book = () => {
             <p className="text-black flex gap-2 items-center"><Check className="w-4 h-4" /> Saznajte više o procesu prodaje</p>
             <p className="text-black flex gap-2 items-center"><Check className="w-4 h-4" /> Dobijte vredne savete i preporuke</p>
           </div>
-          <Button buttonStyle="light">Preuzmi <Download className="w-4 h-4 text-card ml-4" /></Button>
+          <CustomButton buttonStyle="light">Preuzmi <Download className="w-4 h-4 text-card ml-4" /></CustomButton>
         </div>
 
         <div className="max-w-56">

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "../ui/Button";
+import CustomButton from "@/components/custom/CustomButton";
 
 const BecomeAgent = () => {
   return (
@@ -20,7 +20,7 @@ const BecomeAgent = () => {
         <h1 className="xl:text-5xl text-xl font-primary font-extrabold">Zahtevajte više <br className="hidden lg:block" /> od svog <br className="hidden lg:block" /> brokera</h1>
         <p>Razvijajte svoje poslovanje i brend uz brokersku kuću koja se ne boji da će staroj gardi stvoriti neugodnosti.</p>
 
-        <Button showArrow={true}>Pridruži se</Button>
+        <CustomButton showArrow={true}>Pridruži se</CustomButton>
       </div>
     </div>
   );

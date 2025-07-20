@@ -1,18 +1,18 @@
-import React from "react";
-import Button from "../ui/Button";
+
+import CustomButton from "@/components/custom/CustomButton";
 
 const Footer = () => {
   return (
     <footer className="grid xl:grid-cols-5 lg:grid-cols-4 grid-cols-2 lg:p-20 md:p-8 p-4 bg-white">
       <div className="flex lg:flex-col items-start justify-start gap-8 w-full col-span-2 lg:col-span-1">
-        <Button showArrow={true}>Pridruži se</Button>
-        <Button
+        <CustomButton showArrow={true}>Pridruži se</CustomButton>
+        <CustomButton
           showArrow={true}
           buttonStyle="light"
           className="border border-gray-400"
         >
           Agent Login
-        </Button>
+        </CustomButton>
       </div>
 
       <div className="mt-4 lg:mt-0">

@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Button from "@/components/ui/Button";
 import Link from "next/link";
+import CustomButton from "@/components/custom/CustomButton";
 
 const Tabs = ({description}: {description: string}) => {
   const [activeTab, setActiveTab] = useState<"#pregled" | "#karakteristike">(
@@ -45,10 +45,10 @@ const Tabs = ({description}: {description: string}) => {
         </div>
 
         <div className="flex items-center gap-4">
-          <Button buttonStyle="outline" className="!text-card text-lg">
+          <CustomButton buttonStyle="outline" className="!text-card text-lg">
             Kontaktiraj
-          </Button>
-          <Button className="text-lg">Zakaži termin</Button>
+          </CustomButton>
+          <CustomButton className="text-lg">Zakaži termin</CustomButton>
         </div>
       </div>
 

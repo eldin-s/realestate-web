@@ -1,5 +1,4 @@
-import React from "react";
-import Button from "../ui/Button";
+import CustomButton from "@/components/custom/CustomButton";
 
 const Contact = () => {
   return (
@@ -49,7 +48,7 @@ const Contact = () => {
             className="px-6 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-vertical"
           />
 
-          <Button className="w-fit">Pošalji poruku</Button>
+          <CustomButton className="w-fit">Pošalji poruku</CustomButton>
         </div>
       </form>
     </section>

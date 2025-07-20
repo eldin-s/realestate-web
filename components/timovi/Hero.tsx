@@ -1,6 +1,6 @@
-import React from "react";
-import Button from "../ui/Button";
+
 import { ChevronDown } from "lucide-react";
+import CustomButton from "@/components/custom/CustomButton";
 
 const Hero = () => {
   return (
@@ -24,9 +24,9 @@ const Hero = () => {
           <h1 className="lg:text-6xl text-4xl font-extrabold">
             Čine nas jakim
           </h1>
-          <Button className="w-fit mt-4">
+          <CustomButton className="w-fit mt-4">
             Upoznaj nas <ChevronDown className="w-4 h-4" />
-          </Button>
+          </CustomButton>
         </div>
         <div
           className="absolute left-0 bottom-0 w-full z-0"

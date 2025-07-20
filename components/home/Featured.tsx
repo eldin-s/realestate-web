@@ -1,5 +1,5 @@
-import Button from "../ui/Button";
-import PropertyCard from "../ui/PropertyCard";
+import CustomButton from "@/components/custom/CustomButton";
+import PropertyCard from "@/components/ui/PropertyCard";
 
 export const rentListings = [
   {
@@ -277,9 +277,9 @@ const Featured = () => {
           />
         ))}
       </div>
-      <Button buttonStyle="primary" showArrow={true}>
+      <CustomButton buttonStyle="primary" showArrow={true}>
         Pogledaj više
-      </Button>
+      </CustomButton>
     </section>
   );
 };

@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import { Montserrat } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
+import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
+import SubFooter from "@/components/shared/SubFooter";
 
 const geistSans = Quicksand({
   variable: "--font-quicksand",
@@ -28,7 +31,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${monts.variable} antialiased dark`}
       >
+        <Navbar />
         {children}
+        <Footer />
+        <SubFooter />
       </body>
     </html>
   );
