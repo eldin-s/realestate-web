@@ -22,6 +22,7 @@ const LoginPage = () => {
       router.push("/dashboard");
     } catch (err) {
       setError("Invalid email or password");
+      console.log("Login error:", err);
     } finally {
       setLoading(false);
     }

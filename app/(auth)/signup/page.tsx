@@ -24,6 +24,7 @@ const SignupPage = () => {
       await signUp(email, password, firstName, lastName, "user");
       router.push("/login");
     } catch (err) {
+      console.log("Signup error:", err);
       setError("Signup failed. Please try again.");
     } finally {
       setLoading(false);
