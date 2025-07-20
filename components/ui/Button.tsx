@@ -9,13 +9,14 @@ interface ButtonProps {
   size?: "xs" | "sm" | "md" | "lg" | "rounded-xs" | "rounded-sm" | "rounded-md" | "rounded-lg";
   children: ReactNode;
   onClick?: () => void;
+  disabled?: boolean;
 }
 
-const Button = ({ type = "button", buttonStyle, className, children, size, showArrow, onClick }: ButtonProps) => {
+const Button = ({ type = "button", buttonStyle, className, children, size, showArrow, onClick, disabled }: ButtonProps) => {
   const buttonStyles = {
     light: "bg-foreground hover:bg-primary text-card font-semibold transition-colors duration-300",
     primary: "bg-card hover:bg-card/80 text-foreground font-semibold transition-colors duration-300",
-    secondary: "bg-foreground hover:bg-foreground/80",
+    secondary: "bg-foreground text-card hover:bg-foreground/80",
     danger: "bg-destructive hover:bg-destructive/80",
     outline: "border border-gray-600 text-white hover:bg-card/80 transition-colors duration-300",
   };
@@ -40,6 +41,7 @@ const Button = ({ type = "button", buttonStyle, className, children, size, showA
       } 
       ${size ? sizes[size] : sizes.md}
       ${className}`}
+      disabled={disabled}
     >
       {children}
       {showArrow && <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />}

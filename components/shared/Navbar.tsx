@@ -54,7 +54,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   // Check if current route is a property details page
-  const isPropertyDetailsPage = pathname.startsWith('/nekretnine/');
+  const isPropertyDetailsPage = pathname.startsWith('/nekretnine/') || pathname.startsWith('/signup') || pathname.startsWith('/login');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -169,8 +169,8 @@ const Navbar = () => {
               {/* Modal content here */}
               <div className="flex items-center justify-between mb-6">
                 <Image
-                  src="/real-estate.png"
-                  className="w-full max-w-[150px] xl:max-w-[300px] object-contain h-auto"
+                  src="/logos/logo.svg"
+                  className="w-full max-w-[100px] sm:max-w-[120px] md:max-w-[140px] lg:max-w-[160px] xl:max-w-[180px] object-contain h-auto"
                   alt="Logo"
                   width={400}
                   height={50}
