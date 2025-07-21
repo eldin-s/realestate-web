@@ -16,7 +16,7 @@ const BecomeAgent = () => {
       </div>
       {/* INFO */}
       <div className="space-y-8 p-4">
-        <p className="uppercase text-gray-400 font-bold">Postani agent Force Mansion</p>
+        <p className="uppercase text-gray-400 font-bold">Postani agent Zeeker</p>
         <h1 className="xl:text-5xl text-xl font-primary font-extrabold">Zahtevajte više <br className="hidden lg:block" /> od svog <br className="hidden lg:block" /> brokera</h1>
         <p>Razvijajte svoje poslovanje i brend uz brokersku kuću koja se ne boji da će staroj gardi stvoriti neugodnosti.</p>
 

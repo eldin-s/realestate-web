@@ -45,7 +45,7 @@ export function AppSidebar() {
     <Sidebar collapsible="icon">
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel><h1 className="font-bold text-xl">Force mansion</h1></SidebarGroupLabel>
+          <SidebarGroupLabel><h1 className="font-bold text-xl">Zeeker</h1></SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (

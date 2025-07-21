@@ -12,15 +12,15 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: 1,
-    subtitle: "Force Mansion Studio",
-    title: "Svetlo, Kamera, Force Mansion",
+    subtitle: "Zeeker Studio",
+    title: "Svetlo, Kamera, Zeeker",
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet perferendis ab, accusantium maxime voluptatum reprehenderit architecto sed eius adipisci quia!",
     image: "/img/buildings.jpg",
     buttonText: "Posetite studio"
   },
   {
     id: 2,
-    subtitle: "Force Mansion Statistika",
+    subtitle: "Zeeker Statistika",
     title: "Tehnološki zasnovana rešenja za sve",
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet perferendis ab, accusantium maxime voluptatum reprehenderit architecto sed eius adipisci quia!",
     image: "/img/buildings.jpg",
@@ -28,7 +28,7 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: 3,
-    subtitle: "Force Mansion Analitika",
+    subtitle: "Zeeker Analitika",
     title: "Oslobodite potencijal svog doma smelim idejama",
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet perferendis ab, accusantium maxime voluptatum reprehenderit architecto sed eius adipisci quia!",
     image: "/img/buildings.jpg",

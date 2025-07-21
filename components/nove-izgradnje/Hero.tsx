@@ -18,7 +18,7 @@ const Hero = () => {
       >
         <div className="z-10 font-[family-name:var(--font-montserrat)] flex flex-col xl:p-20 p-10">
           <h1 className="lg:text-6xl text-4xl font-extrabold text-center uppercase">
-            Force Mansion
+            Zeeker
           </h1>
           <h1 className="lg:text-6xl text-4xl font-extrabold">
             Nove izgradnje

@@ -47,7 +47,7 @@ const PropertyCard = ({
           {signature && (
             <div className="absolute bottom-0 translate-y-1/2 left-0 bg-black rounded-r-full h-14">
               <span className="text-white px-3 py-1 pr-8 text-base font-bold uppercase">
-                Force Mansion
+                Zeeker
               </span>
             </div>
           )}

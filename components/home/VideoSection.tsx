@@ -32,7 +32,7 @@ const VideoSection = () => {
 
       <div className="relative flex flex-col items-center justify-center w-full h-full text-white text-center z-20 px-8 font-primary">
         <h1 className="xl:text-7xl md:text-3xl text-xl z-10 uppercase font-extrabold mb-2">
-          Force Mansion
+          Zeeker
         </h1>
         <p className="uppercase font-semibold md:text-2xl text-base mb-4">
           Potpis

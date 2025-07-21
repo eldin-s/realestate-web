@@ -143,7 +143,7 @@ const Navbar = () => {
             <span>
               <Search className="w-4 h-4" />
             </span>
-            <span className="font-bold">Sve Force Mansion</span>
+            <span className="font-bold">Sve Zeeker</span>
           </div>
 
           <div
@@ -192,7 +192,7 @@ const Navbar = () => {
                     buttonStyle="light"
                     className="border border-gray-400 hidden sm:flex"
                   >
-                    1-877-FORCE <Phone className="w-4 h-4" />
+                    1-877-Zeeker <Phone className="w-4 h-4" />
                   </CustomButton>
                   <CustomButton size="rounded-sm">
                     <span className="hidden sm:inline-block">Pronađi dom</span>

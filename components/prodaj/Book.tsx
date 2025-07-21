@@ -7,7 +7,7 @@ const Book = () => {
       <div className="flex flex-col md:flex-row justify-center xl:max-w-1/2 gap-8">
         <div className="space-y-4">
           <h1 className="font-primar text-4xl font-extrabold text-card">
-            Prodaj uz Force Mansion
+            Prodaj uz Zeeker
           </h1>
           <div>
             <p className="text-black flex gap-2 items-center"><Check className="w-4 h-4" /> Saznajte više o procesu prodaje</p>

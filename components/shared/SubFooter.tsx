@@ -41,7 +41,7 @@ const SubFooter = () => {
             />
 
             <span className="text-xs ml-auto mr-10 font-primary">
-              &#169; 2025 Force Mansion Real Estate. Sva prava rezervisana.
+              &#169; 2025 Zeeker Real Estate. Sva prava rezervisana.
             </span>
           </div>
 
@@ -60,7 +60,7 @@ const SubFooter = () => {
 
       <div className="pt-8">
         <p className="text-sm text-gray-500 font-primary italic">
-          Force Mansion je moderna agencija za nekretnine koja spaja stručnost, posvećenost i inovaciju. Naša misija je da kupcima, prodavcima i investitorima pružimo pouzdanu podršku tokom celog procesa kupovine ili prodaje nekretnine. Bez obzira da li tražite stan, kuću, poslovni prostor ili investicionu priliku – tu smo da vam pomognemo da pronađete idealno rešenje. Verujemo u transparentnost, profesionalizam i lični pristup svakom klijentu.
+          Zeeker je moderna agencija za nekretnine koja spaja stručnost, posvećenost i inovaciju. Naša misija je da kupcima, prodavcima i investitorima pružimo pouzdanu podršku tokom celog procesa kupovine ili prodaje nekretnine. Bez obzira da li tražite stan, kuću, poslovni prostor ili investicionu priliku – tu smo da vam pomognemo da pronađete idealno rešenje. Verujemo u transparentnost, profesionalizam i lični pristup svakom klijentu.
         </p>
 
         <div className="flex flex-col lg:flex-row gap-2 my-4">
@@ -79,7 +79,7 @@ const SubFooter = () => {
         </div>
 
         <p className="text-sm text-gray-500 font-primary italic">
-          Naša web stranica je dizajnirana da vam omogući jednostavno i brzo pretraživanje nekretnina u ponudi. Uz napredne filtere, detaljne opise i pregledne fotografije, lako možete pronaći ono što tražite – bilo da kupujete, iznajmljujete ili želite da postavite svoju nekretninu. Force Mansion platforma se redovno ažurira i prilagođava vašim potrebama, kako biste imali najbolje moguće korisničko iskustvo, bilo na računaru ili mobilnom uređaju.
+          Naša web stranica je dizajnirana da vam omogući jednostavno i brzo pretraživanje nekretnina u ponudi. Uz napredne filtere, detaljne opise i pregledne fotografije, lako možete pronaći ono što tražite – bilo da kupujete, iznajmljujete ili želite da postavite svoju nekretninu. Zeeker platforma se redovno ažurira i prilagođava vašim potrebama, kako biste imali najbolje moguće korisničko iskustvo, bilo na računaru ili mobilnom uređaju.
         </p>
       </div>
     </div>
