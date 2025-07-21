@@ -17,7 +17,7 @@ const monts = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Force Mansion",
+  title: "ZEEKER",
   description: "Real Estate",
 };
 
@@ -27,15 +27,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
+    <div>
+      <div
         className={`${geistSans.variable} ${monts.variable} antialiased dark`}
       >
         <Navbar />
         {children}
         <Footer />
         <SubFooter />
-      </body>
-    </html>
+      </div>
+    </div>
   );
 }

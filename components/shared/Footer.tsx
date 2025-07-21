@@ -1,5 +1,6 @@
 
 import CustomButton from "@/components/custom/CustomButton";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -11,7 +12,9 @@ const Footer = () => {
           buttonStyle="light"
           className="border border-gray-400"
         >
-          Agent Login
+          <Link href="/login">
+            Agent Login
+          </Link>
         </CustomButton>
       </div>
 

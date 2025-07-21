@@ -54,7 +54,10 @@ const Navbar = () => {
   const pathname = usePathname();
 
   // Check if current route is a property details page
-  const isPropertyDetailsPage = pathname.startsWith('/nekretnine/') || pathname.startsWith('/signup') || pathname.startsWith('/login');
+  const isPropertyDetailsPage =
+    pathname.startsWith("/nekretnine/") ||
+    pathname.startsWith("/signup") ||
+    pathname.startsWith("/login");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,19 +68,19 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-  if (menuModalOpen) {
-    // Disable scroll
-    document.body.style.overflow = "hidden";
-  } else {
-    // Re-enable scroll
-    document.body.style.overflow = "";
-  }
+    if (menuModalOpen) {
+      // Disable scroll
+      document.body.style.overflow = "hidden";
+    } else {
+      // Re-enable scroll
+      document.body.style.overflow = "";
+    }
 
-  // Clean up on unmount
-  return () => {
-    document.body.style.overflow = "";
-  };
-}, [menuModalOpen]);
+    // Clean up on unmount
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuModalOpen]);
 
   return (
     <div
@@ -88,9 +91,8 @@ const Navbar = () => {
       } ${isPropertyDetailsPage ? "!bg-white text-card" : ""}`}
     >
       <nav className="flex items-center justify-between gap-2 font-[family-name:var(--font-quicksand)]">
-        <div className="pl-8">
+        <div className="pl-8 cursor-pointer">
           <Link href="/">
-
             <Image
               src="/logos/logo.svg"
               className="w-full max-w-[100px] sm:max-w-[120px] md:max-w-[140px] lg:max-w-[160px] xl:max-w-[180px] object-contain h-auto"
@@ -144,7 +146,11 @@ const Navbar = () => {
             <span className="font-bold">Sve Force Mansion</span>
           </div>
 
-          <div className={`hidden border ${isPropertyDetailsPage ? "border-gray-400": ""} bg-white rounded-full px-4 py-2 xl:mr-4 lg:flex items-center justify-center gap-3`}>
+          <div
+            className={`hidden border ${
+              isPropertyDetailsPage ? "border-gray-400" : ""
+            } bg-white rounded-full px-4 py-2 xl:mr-4 lg:flex items-center justify-center gap-3`}
+          >
             <span className="font-bold text-blue-700">Sve ostalo</span>
           </div>
           <Link
@@ -171,13 +177,15 @@ const Navbar = () => {
             <div className="w-full bg-white rounded-xl shadow-2xl animate-fade-in xl:p-8 sm:p-4 p-2 m-4 relative text-card">
               {/* Modal content here */}
               <div className="flex items-center justify-between mb-6">
-                <Image
-                  src="/logos/logo.svg"
-                  className="w-full max-w-[100px] sm:max-w-[120px] md:max-w-[140px] lg:max-w-[160px] xl:max-w-[180px] object-contain h-auto"
-                  alt="Logo"
-                  width={400}
-                  height={50}
-                />
+                <Link href="/" onClick={() => setMenuModalOpen(false)}>
+                  <Image
+                    src="/logos/logoblack.svg"
+                    className="w-full max-w-[100px] sm:max-w-[120px] md:max-w-[140px] lg:max-w-[160px] xl:max-w-[180px] object-contain h-auto"
+                    alt="Logo"
+                    width={400}
+                    height={50}
+                  />
+                </Link>
                 <div className="flex items-center justify-center gap-2">
                   <CustomButton
                     size="rounded-sm"
@@ -213,32 +221,35 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex lg:flex-row flex-col items-start justify-start gap-12">
-                  <div className="flex flex-col items-start justify-start lg:gap-4 gap-0 lg:border-r border-gray-200 pr-8">
+                  <div className="flex flex-col items-start justify-start lg:gap-2 gap-0 lg:border-r border-gray-200 pr-8">
                     {navItems.map((item, index) => (
                       <Link
                         key={index}
                         href={item.url || "#"}
-                        className="pt-2 pb-1 mx-2 rounded-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer xl:text-4xl text-2xl font-primary font-extrabold"
+                        className="pt-2 pb-1 mx-2 rounded-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer xl:text-3xl text-xl font-primary font-extrabold"
+                        onClick={() => setMenuModalOpen(false)}
                       >
                         {item.label}{" "}
                       </Link>
                     ))}
                     <Link
                       href={"#"}
-                      className="pt-2 pb-1 mx-2 rounded-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer xl:text-4xl text-2xl font-primary font-extrabold"
+                      className="pt-2 pb-1 mx-2 rounded-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer xl:text-3xl text-xl font-primary font-extrabold"
+                      onClick={() => setMenuModalOpen(false)}
                     >
                       Nove izgradnje
                     </Link>
                     <Link
                       href={"#"}
-                      className="pt-2 pb-1 mx-2 rounded-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer xl:text-4xl text-2xl font-primary font-extrabold"
+                      className="pt-2 pb-1 mx-2 rounded-lg transition-colors relative after:bg-card after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer xl:text-3xl text-xl font-primary font-extrabold"
+                      onClick={() => setMenuModalOpen(false)}
                     >
                       Agenti
                     </Link>
                   </div>
 
                   <div className="flex-1 pl-2">
-                    <div className="mt-4 lg:mt-0">
+                    <div className="mt-10 lg:mt-0">
                       <p className="text-ring text-sm uppercase font-bold">
                         Marketing & Dostignuće
                       </p>
@@ -262,7 +273,7 @@ const Navbar = () => {
                       </ul>
                     </div>
 
-                    <div className="mt-4">
+                    <div className="mt-16">
                       <p className="text-ring text-sm uppercase font-bold">
                         Kompanija
                       </p>
@@ -311,7 +322,7 @@ const Navbar = () => {
                       </ul>
                     </div>
 
-                    <div className="mt-4">
+                    <div className="mt-16">
                       <p className="text-ring text-sm uppercase font-bold">
                         Uvidi
                       </p>
@@ -351,10 +362,13 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex items-center justify-center gap-10 lg:mt-20 mt-8">
-                      <CustomButton size="md">
-                        Agent Login <LockKeyhole />
-                      </CustomButton>
-                      <CustomButton size="md"
+                      <Link href="/login" onClick={() => setMenuModalOpen(false)}>
+                        <CustomButton size="md">
+                          Agent Login <LockKeyhole />
+                        </CustomButton>
+                      </Link>
+                      <CustomButton
+                        size="md"
                         showArrow={true}
                         buttonStyle="light"
                         className="border border-gray-400"

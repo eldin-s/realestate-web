@@ -14,7 +14,7 @@ const monts = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Force Mansion",
+  title: "ZEEKER",
   description: "Real Estate",
 };
 
