@@ -3,39 +3,6 @@
 import { createClient } from '@supabase/supabase-js'
 import { revalidatePath } from 'next/cache'
 
-export interface Property {
-  id: string,
-  title: string,
-  category: string,
-  price: number,
-  monthly_rent?: number,
-  rooms: number,
-  baths: number,
-  square_meters: number,
-  location: string,
-  furnished: boolean,
-  state: string,
-  available_from?: string,
-  contact_email: string,
-  images: string[],
-  signature?: boolean,
-  created_at: string,
-  property_type: string,
-  listing_last_updated: string,
-  appliances: string[],
-  other_features: string[],
-  stories: number,
-  totalStories: number,
-  utilities: string[],
-  garage?: string,
-  parking?: string,
-  heat_type: string,
-  security_features: string[],
-  description: string,
-  pool?: string,
-  hot_water?: string,
-}
-
 export interface CreatePropertyData {
   title: string,
   category: string,
@@ -105,9 +72,14 @@ export async function createProperty(formData: FormData) {
     }
 
     // Validate required fields
-    if (!propertyData.title || !propertyData.category || !propertyData.price || 
+    if (!propertyData.title || !propertyData.category || 
         !propertyData.location || !propertyData.contact_email) {
       return { error: 'Missing required fields' }
+    }
+
+    // Validate that either price or monthly_rent is provided
+    if (!propertyData.price && !propertyData.monthly_rent) {
+      return { error: 'Either sale price or monthly rent must be provided' }
     }
 
     // Insert property into database
@@ -123,7 +95,7 @@ export async function createProperty(formData: FormData) {
 
     if (error) {
       console.error('Error creating property:', error)
-      return { error: 'Failed to create property' }
+      return { error: error.message || 'Failed to create property' }
     }
 
     revalidatePath('/properties')

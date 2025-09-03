@@ -1,11 +1,13 @@
 'use client'
 
 import PropertyForm from '@/components/PropertyForm'
-import { redirect } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 
 export default function AddPropertyPage() {
+  const router = useRouter()
+  
   const handleSuccess = () => {
-    redirect('/properties')
+    router.push('/properties')
   }
 
   return (

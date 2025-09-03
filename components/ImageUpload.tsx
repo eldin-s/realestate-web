@@ -1,5 +1,6 @@
 'use client'
 
+import { XIcon } from 'lucide-react'
 import { useState, useRef, DragEvent } from 'react'
 
 interface ImageUploadProps {
@@ -161,9 +162,9 @@ export default function ImageUpload({
                 <button
                   type="button"
                   onClick={() => removeSelectedFile(index)}
-                  className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-6 h-6 text-xs opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 text-xs opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
                 >
-                  ×
+                  <XIcon className='w-3 h-3' />
                 </button>
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-xs p-1 rounded-b-lg truncate">
                   {file.name}

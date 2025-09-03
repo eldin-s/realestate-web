@@ -1,6 +1,9 @@
+'use client'
+
 import PropertyForm from "@/components/PropertyForm";
 import { getProperty } from "@/libs/actions/editProperty";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 interface EditPropertyPageProps {
   params: Promise<{
@@ -8,21 +11,39 @@ interface EditPropertyPageProps {
   }>;
 }
 
-export default async function EditPropertyPage({
+export default function EditPropertyPage({
   params,
 }: EditPropertyPageProps) {
-  const { id } = await params;
-  const result = await getProperty(id);
+  const router = useRouter();
+  const [property, setProperty] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  if (result.error || !result.data) {
-    redirect("/properties");
-  }
+  useEffect(() => {
+    async function loadProperty() {
+      const { id } = await params;
+      const result = await getProperty(id);
+
+      if (result.error || !result.data) {
+        router.push("/properties");
+        return;
+      }
+
+      setProperty(result.data);
+      setLoading(false);
+    }
+
+    loadProperty();
+  }, [params, router]);
 
   const handleSuccess = () => {
-    redirect("/properties");
+    router.push("/nekretnine");
   };
 
-  if (!result.data) {
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (!property) {
     return <div>Property not found</div>;
   }
 
@@ -30,7 +51,7 @@ export default async function EditPropertyPage({
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="max-w-6xl mx-auto px-4">
         <PropertyForm
-          property={result.data}
+          property={property}
           isEditing={true}
           onSuccess={handleSuccess}
         />

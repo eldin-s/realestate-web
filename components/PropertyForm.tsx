@@ -4,7 +4,6 @@ import { useState } from "react";
 import { createProperty } from "@/libs/actions/createProperty";
 import { updateProperty } from "@/libs/actions/editProperty";
 import { uploadPropertyImages } from "@/libs/actions/imageUpload";
-import { Property } from "@/libs/actions/createProperty";
 import ImageUpload from "./ImageUpload";
 import InputField from "./ui/Input";
 import {
@@ -15,6 +14,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import CustomButton from "./custom/CustomButton";
+import { listingCategories, propertyApplianceOptions, propertySecurityOptions, propertyStates, propertyTypes, propertyUtilityOptions } from "@/libs/constants";
+import { Property } from "@/interfaces/property";
 
 interface PropertyFormProps {
   property?: Property;
@@ -44,36 +45,7 @@ export default function PropertyForm({
     hot_water: property?.hot_water || "",
   });
 
-  const categories = [
-    "prodaja",
-    "iznajmljivanje",
-    "komercijalno",
-    "građevinsko zemljište",
-  ];
-  const propertyTypes = ["stan", "kuća", "studio", "lokal", "zemljište"];
-  const states = ["dostupno", "u procesu", "prodano", "iznajmljeno"];
-  const applianceOptions = [
-    "hladnjak",
-    "štednjak",
-    "perilica posuđa",
-    "mikrovalna",
-    "perilica rublja",
-    "sušilica",
-  ];
-  const utilityOptions = [
-    "struja",
-    "plin",
-    "voda",
-    "internet",
-    "kabel",
-    "grijanje",
-  ];
-  const securityOptions = [
-    "alarmni sistem",
-    "sigurnosne kamere",
-    "ograđeno naselje",
-    "portir",
-  ];
+  console.log("error", error)
 
   const handleImageChange = (files: File[]) => {
     setSelectedImages(files);
@@ -127,6 +99,20 @@ export default function PropertyForm({
       formData.set("pool", formState.pool);
       formData.set("heat_type", formState.heat_type);
       formData.set("hot_water", formState.hot_water);
+
+      // Ensure required fields are not empty
+      if (!formData.get("title")) {
+        throw new Error("Title is required");
+      }
+      if (!formState.category) {
+        throw new Error("Category is required");
+      }
+      if (!formData.get("location")) {
+        throw new Error("Location is required");
+      }
+      if (!formData.get("contact_email")) {
+        throw new Error("Contact email is required");
+      }
 
       // Convert checkboxes to string values
       formData.set("furnished", formData.get("furnished") ? "true" : "false");
@@ -192,7 +178,7 @@ export default function PropertyForm({
                 <SelectValue placeholder="Izaberite kategoriju" />
               </SelectTrigger>
               <SelectContent>
-                {categories.map((cat) => (
+                {listingCategories.map((cat) => (
                   <SelectItem key={cat} value={cat}>
                     {cat}
                   </SelectItem>
@@ -229,9 +215,8 @@ export default function PropertyForm({
             type="number"
             name="price"
             defaultValue={property?.price}
-            required
             min="0"
-            label="Cena *"
+            label="Cena (ako je na prodaju)"
           />
 
           <InputField
@@ -265,7 +250,7 @@ export default function PropertyForm({
                 <SelectValue placeholder="Stanje nekretnine *" />
               </SelectTrigger>
               <SelectContent>
-                {states.map((state) => (
+                {propertyStates.map((state) => (
                   <SelectItem key={state} value={state}>
                     {state}
                   </SelectItem>
@@ -387,7 +372,7 @@ export default function PropertyForm({
           <div>
             <label className="block text-sm font-medium mb-2">Uređaji</label>
             <div className="space-y-2">
-              {applianceOptions.map((appliance) => (
+              {propertyApplianceOptions.map((appliance) => (
                 <label key={appliance} className="flex items-center">
                   <input
                     type="checkbox"
@@ -405,7 +390,7 @@ export default function PropertyForm({
           <div>
             <label className="block text-sm font-medium mb-2">Usluge</label>
             <div className="space-y-2">
-              {utilityOptions.map((utility) => (
+              {propertyUtilityOptions.map((utility) => (
                 <label key={utility} className="flex items-center">
                   <input
                     type="checkbox"
@@ -426,7 +411,7 @@ export default function PropertyForm({
             Sigurnosne karakteristike
           </label>
           <div className="grid grid-cols-2 gap-2">
-            {securityOptions.map((feature) => (
+            {propertySecurityOptions.map((feature) => (
               <label key={feature} className="flex items-center">
                 <input
                   type="checkbox"

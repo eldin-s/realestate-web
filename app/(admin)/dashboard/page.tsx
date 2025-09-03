@@ -1,8 +1,8 @@
-'use client';
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { getCurrentUser, signOut } from '@/lib/auth';
-import type { User } from '@supabase/supabase-js';
+"use client";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { getCurrentUser, signOut } from "@/lib/auth";
+import type { User } from "@supabase/supabase-js";
 
 export default function DashboardPage() {
   const [user, setUser] = useState<User | null>(null);
@@ -15,7 +15,7 @@ export default function DashboardPage() {
         const currentUser = await getCurrentUser();
         setUser(currentUser);
       } catch (error) {
-        console.error('Error fetching user:', error);
+        console.error("Error fetching user:", error);
       } finally {
         setLoading(false);
       }
@@ -27,9 +27,9 @@ export default function DashboardPage() {
   const handleSignOut = async () => {
     try {
       await signOut();
-      router.push('/login');
+      router.push("/login");
     } catch (error) {
-      console.error('Error signing out:', error);
+      console.error("Error signing out:", error);
     }
   };
 
@@ -41,25 +41,22 @@ export default function DashboardPage() {
     <div className="p-4">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-bold">Vaša upravna tabla</h1>
-        <button
-          onClick={handleSignOut}
-          className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
-        >
-          Sign Out
-        </button>
+
+        <div className="flex items-center gap-4">
+          {user && <p className="text-sm">{user.email}</p>}
+          <button
+            onClick={handleSignOut}
+            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+          >
+            Odjavi se
+          </button>
+        </div>
       </div>
-      
+
       <div className="bg-background rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-2">Dobro došli {user?.user_metadata.last_name}!</h2>
-        
-        {user && (
-          <div className=" p-4 rounded">
-            <h3 className="font-medium mb-2">User Information:</h3>
-            <p><strong>Email:</strong> {user.email}</p>
-            <p><strong>User ID:</strong> {user.id}</p>
-            <p><strong>Last Sign In:</strong> {user.last_sign_in_at ? new Date(user.last_sign_in_at).toLocaleString() : 'N/A'}</p>
-          </div>
-        )}
+        <h2 className="text-xl font-semibold mb-2">
+          Dobro došli {user?.user_metadata.last_name}!
+        </h2>
       </div>
     </div>
   );
